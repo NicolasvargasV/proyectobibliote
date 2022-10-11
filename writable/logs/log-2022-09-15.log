@@ -1,0 +1,66 @@
+CRITICAL - 2022-09-15 11:29:17 --> Undefined variable $usuario
+in APPPATH\Views\usuarios\index.php on line 74.
+ 1 APPPATH\Views\usuarios\index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\usuarios\\index.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('usuarios/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->saludos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:31:07 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios\index.php on line 74.
+ 1 APPPATH\Views\usuarios\index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\index.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('usuarios/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->saludos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:33:18 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios\index.php on line 75.
+ 1 APPPATH\Views\usuarios\index.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\index.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('usuarios/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->saludos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:36:18 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios\index.php on line 75.
+ 1 APPPATH\Views\usuarios\index.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\index.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('usuarios/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->saludos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:36:52 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios\index.php on line 75.
+ 1 APPPATH\Views\usuarios\index.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\index.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('usuarios/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->saludos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:39:21 --> Undefined variable $Listausuarios
+in APPPATH\Views\usuarios\index.php on line 75.
+ 1 APPPATH\Views\usuarios\index.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Listausuarios', 'APPPATH\\Views\\usuarios\\index.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('usuarios/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->saludos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
