@@ -1,3 +1,4 @@
+
 <div class="container-sm">
 
 <div class="row">
@@ -20,6 +21,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+        /* Inicio style navv tetete*/
+        /* FIN style navv titutut*/
         /* Inicio style navv tetete*/
         /* FIN style navv titutut*/
     </style>
