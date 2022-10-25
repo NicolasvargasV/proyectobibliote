@@ -1,15 +1,4 @@
-
-<div class="container-sm">
-
-<div class="row">
-<img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="  max-width: 250px ;"   >
-
-</div>
-
-
 <!DOCTYPE html>
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,94 +8,64 @@
 
     <link rel ="stylesheet" type = "text/css" href = ">?= base_url() ?>assets/css/estilos.css" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        /* Inicio style navv tetete*/
-        /* FIN style navv titutut*/
-        /* Inicio style navv tetete*/
-        /* FIN style navv titutut*/
-
-        /* FIN*/
-        /* FIN*/
-
-
-        /* tercera modificacion*/
-    </style>
-
-
-
-
 </head>
-<div class="container-sm">
 <body>
-    <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Pagina Web</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Cursos
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">1° MEDIO</a></li>
-                        <li><a class="dropdown-item" href="#">2° MEDIO</a></li>
-                        <li><a class="dropdown-item" href="#">3° MEDIO</a></li>
-                        <li><a class="dropdown-item" href="#">4° MEDIO</a></li>
-                    </ul>
-                </li>
-              
-                    
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        PTU
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://queestudiarenchile.com/descarga-3-libros-gratis-para-preparar-la-ptu-prueba-de-transicion/">Material</a></li>
-                        <li><a class="dropdown-item" href="https://drive.google.com/file/d/1kheokWKherWaNQ85OkZc48CbBDPmW7-f/view">Guias</a></li>
-                        <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=OxgnJ-IgxA0">Ensayos</a></li>
-                        
-                    </ul>
-
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="/proyectobibliote/Home/agregar_usuario"> Registrarse como socio
-                          
-                      </a>
-                  </li>
-                    
-                </li>
-
-
-
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled">Contacto</a>
-                </li>
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index">
+        <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cursos
+              </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">1° MEDIO</a></li>
+            <li><a class="dropdown-item" href="#">2° MEDIO</a></li>
+            <li><a class="dropdown-item" href="#">3° MEDIO</a></li>
+            <li><a class="dropdown-item" href="#">4° MEDIO</a></li>
+          </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PTU
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://queestudiarenchile.com/descarga-3-libros-gratis-para-preparar-la-ptu-prueba-de-transicion/">Material</a></li>
+              <li><a class="dropdown-item" href="https://drive.google.com/file/d/1kheokWKherWaNQ85OkZc48CbBDPmW7-f/view">Guias</a></li>
+              <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=OxgnJ-IgxA0">Ensayos</a></li>       
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-            <li><a type="button" href="<?php echo base_url("http://localhost/Home/InsertaDato");?>" class="btn btn-success"  float ='right' >CERRAR SESSION</a></li>
-                
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="/proyectobibliote/Home/agregar_usuario"> Registrarse como socio</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disable" href="#">
+                Contacto
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a type="button" href="<?php echo base_url('LogoutController/logout');?>" class="btn btn-success">Cerrar Sesion</a>
+            </li>
+        </ul>
             </div>
         </div>
     </nav>
+</body>
+
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    
-
-
-</body>
-
-<br></b>
+  
 <br></b>
 
 

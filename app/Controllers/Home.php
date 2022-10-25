@@ -41,8 +41,6 @@ class Home extends BaseController
         return view('usuarios/index', $data);
     }
 
-
-
     public function InsertaDato()
     {
 
@@ -54,15 +52,12 @@ class Home extends BaseController
         'estado'=> $this->request->getPost('estado')
         );
     
-    $MiObjeto->insert($data);
-    $users= $MiObjeto->findAll();
+        $MiObjeto->insert($data);
+        $users= $MiObjeto->findAll();
 
-    $data['Listatipousuario'] = $users;
-    return view ('usuarios/index', $data) ;
-
+        $data['Listatipousuario'] = $users;
+        return view ('usuarios/insertarDato', $data);
     }
-
-
 
     //Agregar
     public function agregar_usuario()
@@ -102,7 +97,6 @@ class Home extends BaseController
     return view ('usuarios/registrarUsuario', $data);
 
     }
-
 
     public function agregar_libro()
     {
@@ -173,10 +167,6 @@ public function agregar_guia()
     return view ('usuarios/registrarguia', $data);
 
     }
-
-
-
-
 
     public function basedatos()
     {
