@@ -14,6 +14,96 @@
 
 </head>
 
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index">
+                <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/insertaDato">
+                            Insertar Datos
+                        </a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.sectormatematica.cl/educmedia.htm">
+                            Guias practicas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.iesboliches.org/tecnologia/index.php/16-videos-tecnicas-estudio">
+                            Tecnicas de estudios
+                        </a>
+                    </li>
+                    <div class="btn-group">
+                  
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    
+                  Accion
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_libro">agregar libro</a></li>
+                    <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_guia">agregar guia</a></li>
+                    <li><a class="dropdown-item" href="#">agregar control</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    
+                  </ul>
+      
+                  
+                  </div>
+
+                  </ul>
+
+
+
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a type="button" href="<?php echo base_url("signin");?>" class="btn btn-success">INGRESAR</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <body>
     <div class="container-fluid">
     <br></b>

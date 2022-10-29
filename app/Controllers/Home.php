@@ -6,6 +6,8 @@ use App\Models\usuariosModel;
 use App\Models\UserModel;
 use App\Models\libros_apoyoModel;
 use App\Models\guiasModel;
+use App\Models\Controller;
+use App\Models\controlesModel;
 
 
 
@@ -168,6 +170,61 @@ public function agregar_guia()
 
     }
 
+
+    public function agregar_control()
+    {
+        $db = \Config\Database::connect();
+        $MiObjeto= new controlesModel($db);
+        $users= $MiObjeto->findAll();
+        $data['Listalibro'] = $users;
+
+        return view('usuarios/registrarcontrol', $data);
+    }
+
+    public function nuevocontrol()
+    {
+        $db = \Config\Database::connect();  
+        $MiObjeto = new controlesModel($db); 
+        
+     $data=array(   
+        'nombre_control'=> $this->request->getPost('nombre_control'),
+        'asignatura_control'=> $this->request->getPost('asignatura_control'),
+        'grado_control'=> $this->request->getPost('grado_control'),
+          
+     );
+
+
+    $MiObjeto->insert($data);
+    print_r(  $MiObjeto->errors());
+    $users= $MiObjeto->findAll();
+ 
+    print_r($users);
+    $data['Listacontrol'] = $users;
+    return view ('usuarios/registrarcontrol', $data);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function basedatos()
     {
         $db = \Config\Database::connect();
@@ -180,12 +237,11 @@ public function agregar_guia()
 
 
 
-
-
-
-
-
-
+    public function logout()
+    {
+        session_destroy();
+        return redirect()->to('/app/Controllers/Index');
+    }   
 
 
 

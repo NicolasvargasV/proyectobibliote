@@ -80,35 +80,28 @@
 
 
 
-
-
-
-
-  <body>
+<body>
     <div class="container-fluid">
 
-    <!-- formulario libro -->
+    <!-- formulario control -->
     <br></b>
     
 <div class ="col border-primary">
-<form action="<?php echo base_url('Home/nuevolibro'); ?>" method="post">
+<form action="<?php echo base_url('Home/nuevocontrol'); ?>" method="post">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nombre del libro </label>
-    <input type="text" class="form-control" name="Nombre_lib" id="Nombre_lib" aria-describedby="emailHelp">
+    <label for="exampleInputEmail1" class="form-label">Nombre control </label>
+    <input type="text" class="form-control" name="nombre_control" id="nombre_control" aria-describedby="emailHelp">
     
   
   <div class="mb-3">
-    <label for="Autor_lib" class="form-label">Autor</label>
-    <input type="text" class="form-control" name="Autor_lib" id="Autor_lib">
+    <label for="Autor_lib" class="form-label">agregar asignatura del control</label>
+    <input type="text" class="form-control" name="asignatura_control" id="asignatura_control">
   </div>
   <div class="mb-3">
-    <label for="Genero_lib" class="form-label">genero del libro</label>
-    <input type="text" class="form-control" name="Genero_lib" id="Genero_lib">
+    <label for="Genero_lib" class="form-label">Grado del control</label>
+    <input type="text" class="form-control" name="grado_control" id="grado_control">
   </div>
-  <div class="mb-3">
-    <label for="resumen_lib" class="form-label">agregar resumen</label>
-    <input type="text" class="form-control" name="resumen_lib" id="resumen_lib">
-  </div>
+  
   <button type="submit" class="btn btn-primary">Guardar</button>
 </form>
 </div>

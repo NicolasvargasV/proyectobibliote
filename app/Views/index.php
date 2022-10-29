@@ -12,6 +12,7 @@
     
     </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
@@ -38,16 +39,28 @@
                             Tecnicas de estudios
                         </a>
                     </li>
-                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Accion
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_libro">agregar libro</a></li>
-                        <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_guia">agregar guia</a></li>
-                        <li><a class="dropdown-item" href="#">agregar control</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                    </ul>
-                </ul>
+                    <div class="btn-group">
+                  
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    
+                  Accion
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_libro">agregar libro</a></li>
+                    <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_guia">agregar guia</a></li>
+                    <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_control">agregar control</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    
+                  </ul>
+      
+                  
+                  </div>
+
+                  </ul>
+
+
+
+
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
@@ -63,7 +76,7 @@
 <br></br>
 <div class="container-sm">
     <body>
-        <!-- esto es el header -->
+       
         <!-- esto es el header -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">

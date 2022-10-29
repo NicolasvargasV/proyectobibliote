@@ -54,8 +54,8 @@
         </form>
         <ul class="nav navbar-nav navbar-right">
             <li>
-                <a type="button" href="<?php echo base_url('LogoutController/logout');?>" class="btn btn-success">Cerrar Sesion</a>
-            </li>
+                <a type="button" href="<?php echo base_url('/index');?>" class="btn btn-success">Cerrar Sesion</a>
+            </li><!-- el href es  Home/Logout-->
         </ul>
             </div>
         </div>
