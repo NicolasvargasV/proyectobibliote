@@ -14,7 +14,7 @@ class usuariosModel extends Model
     protected $returnType     = 'array';
     
 
-    protected $allowedFields = ['rut_Usuario','fechaNac','nombres','Apaterno','Amaterno','email','estadoUsuario'];
+    protected $allowedFields = ['rut_Usuario','fechaNac','nombres','Apaterno','Amaterno','email'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index">
+        <a class="navbar-brand" href=<?php echo base_url('/index2');?> class="btn btn-success">
                 <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,34 +68,13 @@
                 </form>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a type="button" href="<?php echo base_url("signin");?>" class="btn btn-success">INGRESAR</a>
+                    <a type="button" href="<?php echo base_url('/index');?>" class="btn btn-success">Cerrar Sesion</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -111,27 +90,32 @@
     <!-- formulario -->
 <div class ="col border-primary">
 <form action="<?php echo base_url('Home/nuevoUsuario'); ?>" method="post">
+ 
   <div class="mb-3">
-    <label for="rut_Usuario" class="form-label">rut </label>
-    <input type="text" class="form-control" name="rut_Usuario" id="rut_Usuario" aria-describedby="emailHelp">
-    
+    <label for="rut_Usuario" class="form-label">Ingrese el rut del Usuario</label>
+    <input type="text" class="form-control" name="rut_Usuario" id="rut_Usuario">
   </div>
   <div class="mb-3">
-    <label for="fechaNac" class="form-label">fechaNac</label>
+    <label for="fechaNac" class="form-label">Ingrese su fecha de nacimiento</label>
     <input type="text" class="form-control" name="fechaNac" id="fechaNac">
   </div>
   <div class="mb-3">
-    <label for="Apaterno" class="form-label">1er apellido</label>
+    <label for="nombres" class="form-label">Ingrese su Nombre</label>
+    <input type="text" class="form-control" name="nombres" id="nombres">
+  </div>
+  <div class="mb-3">
+    <label for="Apaterno" class="form-label">Ingrese el apellido paterno</label>
     <input type="text" class="form-control" name="Apaterno" id="Apaterno">
   </div>
   <div class="mb-3">
-    <label for="Amaterno" class="form-label ">2do apellido</label>
+    <label for="Amaterno" class="form-label ">Ingrese el apellido materno</label>
     <input type="text" class="form-control" name="Amaterno" id="Amaterno">
   </div>
   <div class="mb-3">
     <label for="email" class="form-label">email</label>
     <input type="text" class="form-control" name="email" id="email">
   </div>
+
   <button type="submit" class="btn btn-primary">agregar</button>
 </form>
 </div>

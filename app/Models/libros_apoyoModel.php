@@ -14,7 +14,7 @@ class libros_apoyoModel extends Model
     protected $returnType     = 'array';
     
 
-    protected $allowedFields = ['Nombre_lib', 'Autor_lib','Genero_lib ','resumen_lib'];
+    protected $allowedFields = ['Nombre_lib', 'Autor_lib','Genero_lib','resumen_lib'];
 
 
     protected $useTimestamps = false;

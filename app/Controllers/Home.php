@@ -80,21 +80,19 @@ class Home extends BaseController
     
      $data=array(   
     
-        'id_usuario'=> $this->request->getPost('id_usuario'),
+        
         'rut_Usuario'=> $this->request->getPost('rut_Usuario'),
-        'id_tipoUsuario'=> $this->request->getPost('id_tipoUsuario'),
         'fechaNac'=> $this->request->getPost('fechaNac'),
+        'nombres'=> $this->request->getPost('nombres'),
         'Apaterno'=> $this->request->getPost('Apaterno'),
         'Amaterno'=> $this->request->getPost('Amaterno'),
         'email'=> $this->request->getPost('email')
         
+        
      );
 
     $MiObjeto->insert($data);
-    print_r(  $MiObjeto->errors());
     $users= $MiObjeto->findAll();
- 
-    print_r($users);
     $data['ListaUsuario'] = $users;
     return view ('usuarios/registrarUsuario', $data);
 
@@ -124,10 +122,7 @@ class Home extends BaseController
 
 
     $MiObjeto->insert($data);
-    print_r(  $MiObjeto->errors());
     $users= $MiObjeto->findAll();
- 
-    print_r($users);
     $data['Listalibro'] = $users;
     return view ('usuarios/registrarlibro', $data);
 
@@ -161,10 +156,7 @@ public function agregar_guia()
 
 
     $MiObjeto->insert($data);
-    print_r(  $MiObjeto->errors());
     $users= $MiObjeto->findAll();
-
-    print_r($users);
     $data['Listaguia'] = $users;
     return view ('usuarios/registrarguia', $data);
 
@@ -195,28 +187,11 @@ public function agregar_guia()
 
 
     $MiObjeto->insert($data);
-    print_r(  $MiObjeto->errors());
     $users= $MiObjeto->findAll();
- 
-    print_r($users);
     $data['Listacontrol'] = $users;
     return view ('usuarios/registrarcontrol', $data);
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

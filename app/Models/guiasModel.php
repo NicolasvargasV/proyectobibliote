@@ -14,7 +14,7 @@ class guiasModel extends Model
     protected $returnType     = 'array';
     
 
-    protected $allowedFields = ['nombre_guia', 'tipo_guia','link_vid_guia '];
+    protected $allowedFields = ['nombre_guia', 'tipo_guia','link_vid_guia'];
 
 
     protected $useTimestamps = false;
