@@ -223,3 +223,14 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
+CRITICAL - 2022-11-04 12:59:54 --> Undefined variable $Listatipousuario
+in APPPATH\Views\usuarios\registrarlibro.php on line 135.
+ 1 APPPATH\Views\usuarios\registrarlibro.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Listatipousuario', 'APPPATH\\Views\\usuarios\\registrarlibro.php', 135)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarlibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarlibro', [], true)
+ 5 APPPATH\Controllers\Home.php(108): view('usuarios/registrarlibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_libro()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

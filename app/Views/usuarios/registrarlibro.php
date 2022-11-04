@@ -11,7 +11,9 @@
     
     </style>
     
-
+<!-- datatable -->
+<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css> </link>
+<link rel="stylesheet" href=https://cdn.datatables.net/1.12.1/css/dataTables.semanticui.min.css></link>
 </head>
 
 
@@ -112,5 +114,105 @@
   <button type="submit" class="btn btn-primary">Guardar</button>
 </form>
 </div>
+
+
+
+
+<!-- Data base -->
+
+
+ <!-- Despliege formulario -->
+ <table  id="example" class="ui celled table" style="width:100%">
+      <thead>
+      <tr>
+        <th scope="col">Nombre del libro </th>
+        <th scope="col">Autor</th>
+        <th scope="col">genero del libro</th>
+        <th scope="col">agregar resumen</th>
+      </tr>
+      </thead>
+      <tbody>
+      <br></b>
+      <br></b>
+        <h3>Libros en la bd  </h3>
+        <?php foreach ($Listalibro as $item):?>
+          
+          <tr>
+            <td><?php echo $item['Nombre_lib'];?></td>
+            <td><?php echo $item['Autor_lib'];?></td>
+            <td><?php echo $item['Genero_lib'];?></td>
+            <td><?php echo $item['resumen_lib'];?></td>
+          </tr>
+        <?php endforeach;?>
+    
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+<script src=https://code.jquery.com/jquery-3.5.1.js ></script>
+<script src=https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js></script>
+<script src=https://cdn.datatables.net/1.12.1/js/dataTables.semanticui.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js></script>
+
+
+
+
+    <script>
+
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
+
+    </script>
+
+
+<script>
+
+    $('#example').DataTable( {
+        responsive: true,
+        autoWidth: false,
+        "language": {
+            "processing": "Procesando...",
+            "lengthMenu": "Mostrar _MENU_ registros",
+            "zeroRecords": "No se encontraron resultados",
+            "emptyTable": "Ningún dato disponible en esta tabla",
+            "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "infoFiltered": "(De _MAX_ total records)",
+            "info": "Mostrando la pagina _PAGE_ de _PAGES_",
+             "search": "Buscar:",
+            "infoThousands": ",",
+            "loadingRecords": "Cargando...",
+            "paginate": {
+            "first": "Primero",
+            "last": "Último",
+            "next": "Siguiente",
+            "previous": "Anterior"}
+        },
+            "aria": {
+                "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+                "sortDescending": ": Activar para ordenar la columna de manera descendente"
+    }
+    } );
+
+</script>
+    <br></br>
+
+
+
+
+    
+
+
+
+
 
 </body>
