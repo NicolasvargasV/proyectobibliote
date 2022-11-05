@@ -168,7 +168,7 @@ public function agregar_guia()
         $db = \Config\Database::connect();
         $MiObjeto= new controlesModel($db);
         $users= $MiObjeto->findAll();
-        $data['Listalibro'] = $users;
+        $data['Listacontrol'] = $users;
 
         return view('usuarios/registrarcontrol', $data);
     }
