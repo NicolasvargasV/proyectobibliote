@@ -43,3 +43,18 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
+ERROR - 2022-11-05 15:39:03 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}

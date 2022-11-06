@@ -12,6 +12,10 @@
     </style>
    <!-- Chart.js -->
     <script src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js>    </script>
+    <!-- cqry -->
+
+                             
+
 </head>
 
 
@@ -177,6 +181,35 @@ const myChart = new Chart(ctx, {
     }
 });
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>

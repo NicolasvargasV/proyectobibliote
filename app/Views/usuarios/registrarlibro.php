@@ -14,6 +14,17 @@
 <!-- datatable -->
 <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css> </link>
 <link rel="stylesheet" href=https://cdn.datatables.net/1.12.1/css/dataTables.semanticui.min.css></link>
+           
+    <!--font awesome con CDN-->  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">  
+
+
+
+   
+
+
+
+      
 </head>
 
 
@@ -61,9 +72,6 @@
                   </div>
 
                   </ul>
-
-
-
 
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -125,10 +133,12 @@
  <table  id="example" class="ui celled table" style="width:100%">
       <thead>
       <tr>
+      <th scope="col">ID</th>
         <th scope="col">Nombre del libro </th>
         <th scope="col">Autor</th>
         <th scope="col">genero del libro</th>
         <th scope="col">agregar resumen</th>
+
       </tr>
       </thead>
       <tbody>
@@ -138,23 +148,17 @@
         <?php foreach ($Listalibro as $item):?>
           
           <tr>
+            <td><?php echo $item['cod_lib'];?></td>
             <td><?php echo $item['Nombre_lib'];?></td>
             <td><?php echo $item['Autor_lib'];?></td>
             <td><?php echo $item['Genero_lib'];?></td>
             <td><?php echo $item['resumen_lib'];?></td>
+            
           </tr>
         <?php endforeach;?>
     
     </tbody>
   </table>
-
-
-
-
-
-
-
-
 
 
 
@@ -205,11 +209,35 @@
 
 </script>
     <br></br>
+    
+
+
+    
+
+
+
 
 
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

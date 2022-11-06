@@ -80,7 +80,7 @@ class Home extends BaseController
     
      $data=array(   
     
-        
+        'id_usuario'=> $this->request->getPost('id_usuario'),
         'rut_Usuario'=> $this->request->getPost('rut_Usuario'),
         'fechaNac'=> $this->request->getPost('fechaNac'),
         'nombres'=> $this->request->getPost('nombres'),
@@ -97,6 +97,18 @@ class Home extends BaseController
     return view ('usuarios/registrarUsuario', $data);
 
     }
+
+    public function borrarUsuario(){
+
+    }
+
+
+
+
+
+
+
+
 
     public function agregar_libro()
     {
@@ -217,6 +229,71 @@ public function agregar_guia()
         session_destroy();
         return redirect()->to('/app/Controllers/Index');
     }   
+
+
+
+
+
+
+
+
+
+
+
+
+//testing
+public function borrar_autor(){
+    $db = \Config\Database::connect();
+    $userModel=new autorModel($db);
+    $request= \Config\Services::request();
+    
+    $id=$request->getPostGet('id');
+    //print_r("asdasdasddas");
+    //print_r($id);
+   
+    $userModel->delete($id);
+    if($userModel->delete($id)===false){
+        echo view('paginas/error_borrar_autor');
+    }
+    else{
+        echo view('paginas/felicidades2');
+    }
+    
+        $objetito = new autorModel($db);
+        $users = $objetito->findAll();
+        $data['listaAutor']=$users;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

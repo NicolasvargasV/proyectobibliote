@@ -11,6 +11,13 @@
     
     </style>
     
+<!-- datatable -->
+<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css> </link>
+<link rel="stylesheet" href=https://cdn.datatables.net/1.12.1/css/dataTables.semanticui.min.css></link>
+           
+    <!--font awesome con CDN-->  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">  
+
 
 </head>
 
@@ -79,15 +86,42 @@
 
 
 
-
-
-
-
   <body>
-    <div class="container-fluid">
-    <br></b>
-
     <!-- formulario -->
+
+  <?php
+  $session=session();
+  $estadoLog=false;
+  if(isset($session)){
+    if($session->has('isLoggedIn')){
+      if($session->isLoggedIn){
+        $estadoLog =true;
+      }
+    }
+  }
+
+?>
+
+<?php
+    if($estadoLog){
+      ?>
+      <?php
+      if(isset($aux)){
+        print_r("data");
+        $name=$aux['users'][0]['nombreAutor'];
+        print($aux);
+      }
+      else{
+        //print("no data");
+      }
+    }
+?>
+<?php   
+      if($estadoLog)
+  ?>
+
+<div class="container-fluid">
+<br></b>
 <div class ="col border-primary">
 <form action="<?php echo base_url('Home/nuevoUsuario'); ?>" method="post">
  
@@ -119,5 +153,105 @@
   <button type="submit" class="btn btn-primary">agregar</button>
 </form>
 </div>
+
+<br></b>
+<h3>Socios registrados  </h3>
+<!-- Despliege formulario -->
+<table  id="example" class="ui celled table" style="width:100%">
+      <thead>
+      <tr>
+        <th scope="col">ID </th>
+        <th scope="col">Rut del usuario </th>
+        <th scope="col">fecha de nacimiento</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido paterno</th>
+        <th scope="col">Apellido materno</th>
+        <th scope="col">Email</th>
+
+        
+        <th scope="col">Accion</th><!--QUIERO ELIMINAR  -->
+        
+      </tr>
+      </thead>
+      <tbody>
+      
+
+       
+
+
+
+<?php foreach ($ListaUsuario as $item):?>
+          
+          <tr>
+            
+            <td><?php echo $item['id_usuario'];?></td>
+            <td><?php echo $item['rut_Usuario'];?></td>
+            <td><?php echo $item['fechaNac'];?></td>
+            <td><?php echo $item['nombres'];?></td>
+            <td><?php echo $item['Apaterno'];?></td>
+            <td><?php echo $item['Amaterno'];?></td>
+            <td><?php echo $item['email'];?></td>
+            
+            <td><a type="button" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Proyecto_en_construccion.jpg/800px-Proyecto_en_construccion.jpg" class="btn btn-danger">Eliminar</a></td>
+            
+          </tr>
+        <?php endforeach;?>
+    
+    </tbody>
+  </table>
+
+
+
+<script src=https://code.jquery.com/jquery-3.5.1.js ></script>
+<script src=https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js></script>
+<script src=https://cdn.datatables.net/1.12.1/js/dataTables.semanticui.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js></script>
+
+
+
+
+    <script>
+
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
+
+    </script>
+
+
+<script>
+
+    $('#example').DataTable( {
+        responsive: true,
+        autoWidth: false,
+        "language": {
+            "processing": "Procesando...",
+            "lengthMenu": "Mostrar _MENU_ registros",
+            "zeroRecords": "No se encontraron resultados",
+            "emptyTable": "Ningún dato disponible en esta tabla",
+            "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "infoFiltered": "(De _MAX_ total records)",
+            "info": "Mostrando la pagina _PAGE_ de _PAGES_",
+             "search": "Buscar:",
+            "infoThousands": ",",
+            "loadingRecords": "Cargando...",
+            "paginate": {
+            "first": "Primero",
+            "last": "Último",
+            "next": "Siguiente",
+            "previous": "Anterior"}
+        },
+            "aria": {
+                "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+                "sortDescending": ": Activar para ordenar la columna de manera descendente"
+    }
+    } );
+
+</script>
+    <br></br>
+    
+
+
+
 
 </body>
