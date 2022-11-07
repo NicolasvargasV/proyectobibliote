@@ -241,10 +241,16 @@ public function agregar_guia()
 
 
 
-//testing
-public function borrar_autor(){
+
+
+
+
+
+
+//invento
+public function borrar_libro(){
     $db = \Config\Database::connect();
-    $userModel=new autorModel($db);
+    $userModel=new libroModel($db);
     $request= \Config\Services::request();
     
     $id=$request->getPostGet('id');
@@ -252,27 +258,62 @@ public function borrar_autor(){
     //print_r($id);
    
     $userModel->delete($id);
-    if($userModel->delete($id)===false){
-        echo view('paginas/error_borrar_autor');
-    }
-    else{
-        echo view('paginas/felicidades2');
-    }
     
-        $objetito = new autorModel($db);
-        $users = $objetito->findAll();
-        $data['listaAutor']=$users;
+    $objetito = new libroModel($db);
+    $objetito2= new autorModel($db);
+    $objetito3= new editorialModel($db);
+    $objetito4= new generoModel($db);
+
+
+    $users = $objetito->findAll();
+    $users2= $objetito2->findAll();
+    $users3= $objetito3->findAll();
+    $users4= $objetito4->findAll();
+    //$users = $objetito->query("SELECT * FROM libro");
+    $data['listaLibro']=$users;
+    $data['listaAutor']=$users2;
+    $data['listaEditorial']=$users3;
+    $data['listaGenero']=$users4;
+    echo view('paginas/header');
+    echo view('paginas/newnavbar');
+    //echo view('formularios/formularioLibro',$data);
+    echo view('paginas/agregarLibro',$data);
+    echo view('paginas/footer');
 
 }
 
+public function preguntaBorrarLibro(){
+    $db = \Config\Database::connect();
+    $userModel= new libroModel($db);
+    $request= \Config\Services::request();
+    $id=$request->getPostGet('id');
+    $users=$userModel->find([$id]);
+    $userAux=$userModel->find([$id]);
+    $userAux=array('users'=>$userAux);
 
 
+    $objetito = new libroModel($db);
+    $objetito2= new autorModel($db);
+    $objetito3= new editorialModel($db);
+    $objetito4= new generoModel($db);
 
 
-
-
-
-
+    $users = $objetito->findAll();
+    $users2= $objetito2->findAll();
+    $users3= $objetito3->findAll();
+    $users4= $objetito4->findAll();
+    //$users = $objetito->query("SELECT * FROM libro");
+    $data['listaLibro']=$users;
+    $data['listaAutor']=$users2;
+    $data['listaEditorial']=$users3;
+    $data['listaGenero']=$users4;
+    $data['aux']=$userAux;
+    echo view('paginas/header');
+    echo view('paginas/newnavbar');
+    //echo view('formularios/formularioAutor',$data);
+    echo view('preguntas/deseaborrarLibro',$data);
+    echo view('paginas/footer');
+}
 
 
 

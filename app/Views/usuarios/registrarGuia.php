@@ -11,7 +11,9 @@
     
     </style>
     
-
+    <link rel="stylesheet" type="text/css" href=<?php echo base_url("css/jquery.dataTables.min.css");?> />
+    <link rel="stylesheet" type="text/css" href=<?php echo base_url("css/buttons.dataTables.min.css");?> />
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 </head>
 
 
@@ -74,41 +76,8 @@
             </div>
         </div>
     </nav>
-</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <body>
+    <body>
     <div class="container-fluid">
     <br></b>
 
@@ -132,5 +101,97 @@
   <button type="submit" class="btn btn-primary">agregar</button>
 </form>
 </div>
+
+    <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                
+                
+            </div>
+           
+            
+
+        </div>
+    </div>
+
+    <div class="container body-content">
+        
+        
+ 
+
+
+        <center><h1>Listado de guias </h1></center>
+        <table id="datatables" class="display" style="width:100%">
+        <thead>
+      <tr>
+      <th scope="col">Nombre de la guia</th>
+      <th scope="col">tipo de guia </th>
+       <th scope="col">link referencial de la guia</th>
+        
+
+      </tr>
+      </thead>
+     
+      
+        <h5>Opciones de descarga  </h5>
+        <?php foreach ($Listaguia as $item):?>
+            
+          <tr>
+            
+            <td><?php echo $item['nombre_guia'];?></td>
+            <td><?php echo $item['tipo_guia'];?></td>
+            <td><?php echo $item['link_vid_guia'];?></td>
+            
+            
+          </tr>
+        <?php endforeach;?>
+    
+    </tbody>
+        </thead>     
+
+</table>
+
+<footer>
+    <p id="fecha">
+        <script type="text/javascript">
+            var d = new Date();
+            var year = d.getFullYear();
+            document.getElementById("fecha").innerHTML ='<center>'+ '<br>' + '<strong>' +year + '</strong>'+'</center>';
+        </script>
+    </p>
+</footer>
+</div>
+
+
+<script src=<?php echo base_url("js/jquery-3.3.1.js");?>></script>
+<script src=<?php echo base_url("js/jquery.dataTables.min.js");?>></script>
+<script src=<?php echo base_url("js/dataTables.buttons.min.js");?>></script>
+<script src=<?php echo base_url("js/buttons.flash.min.js");?>></script>
+<script src=<?php echo base_url("js/jszip.min.js");?>></script>
+<script src=<?php echo base_url("js/pdfmake.min.js");?>></script>
+<script src=<?php echo base_url("js/vfs_fonts.js");?>></script>
+<script src=<?php echo base_url("js/buttons.html5.min.js");?>></script>
+<script src=<?php echo base_url("js/bootstrap.js");?>></script>
+<script src=<?php echo base_url("js/scripts.js");?>></script>
+<script src=<?php echo base_url("js/bootstrap-toggle.min.js");?>></script>
+
+
+
+
+
+<script>
+
+    
+</script>
+
+</body>
+
+
+
+
+
+
+  
 
 </body>
