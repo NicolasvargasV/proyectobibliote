@@ -143,7 +143,6 @@
             <td><?php echo $item['tipo_guia'];?></td>
             <td><?php echo $item['link_vid_guia'];?></td>
             
-            
           </tr>
         <?php endforeach;?>
     

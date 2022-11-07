@@ -40,6 +40,8 @@ $routes->get('/agregarGuia', 'Home::agregarGuia');
 $routes->get('/agregarlibro', 'Home::agregarlibro');
 $routes->get('/agregarControl', 'Home::agregarControl');
 $routes->get('/GenerarUsuario', 'Home::GenerarUsuario');
+$routes->get('borrarUsuarios/(:num)', 'Home::borrarUsuarios/$1');
+
 
 /*
  * --------------------------------------------------------------------

@@ -8,7 +8,7 @@ use App\Models\libros_apoyoModel;
 use App\Models\guiasModel;
 use App\Models\Controller;
 use App\Models\controlesModel;
-
+use App\Models\usuarios;
 
 
 class Home extends BaseController
@@ -239,84 +239,24 @@ public function agregar_guia()
 
 
 
+//borrar usuario
 
 
-
-
-
-
-
-
-//invento
-public function borrar_libro(){
-    $db = \Config\Database::connect();
-    $userModel=new libroModel($db);
-    $request= \Config\Services::request();
     
-    $id=$request->getPostGet('id');
-    //print_r("asdasdasddas");
-    //print_r($id);
-   
-    $userModel->delete($id);
+    public function borrarUsuarios($id_usuario=null){
     
-    $objetito = new libroModel($db);
-    $objetito2= new autorModel($db);
-    $objetito3= new editorialModel($db);
-    $objetito4= new generoModel($db);
-
-
-    $users = $objetito->findAll();
-    $users2= $objetito2->findAll();
-    $users3= $objetito3->findAll();
-    $users4= $objetito4->findAll();
-    //$users = $objetito->query("SELECT * FROM libro");
-    $data['listaLibro']=$users;
-    $data['listaAutor']=$users2;
-    $data['listaEditorial']=$users3;
-    $data['listaGenero']=$users4;
-    echo view('paginas/header');
-    echo view('paginas/newnavbar');
-    //echo view('formularios/formularioLibro',$data);
-    echo view('paginas/agregarLibro',$data);
-    echo view('paginas/footer');
-
-}
-
-public function preguntaBorrarLibro(){
-    $db = \Config\Database::connect();
-    $userModel= new libroModel($db);
-    $request= \Config\Services::request();
-    $id=$request->getPostGet('id');
-    $users=$userModel->find([$id]);
-    $userAux=$userModel->find([$id]);
-    $userAux=array('users'=>$userAux);
-
-
-    $objetito = new libroModel($db);
-    $objetito2= new autorModel($db);
-    $objetito3= new editorialModel($db);
-    $objetito4= new generoModel($db);
-
-
-    $users = $objetito->findAll();
-    $users2= $objetito2->findAll();
-    $users3= $objetito3->findAll();
-    $users4= $objetito4->findAll();
-    //$users = $objetito->query("SELECT * FROM libro");
-    $data['listaLibro']=$users;
-    $data['listaAutor']=$users2;
-    $data['listaEditorial']=$users3;
-    $data['listaGenero']=$users4;
-    $data['aux']=$userAux;
-    echo view('paginas/header');
-    echo view('paginas/newnavbar');
-    //echo view('formularios/formularioAutor',$data);
-    echo view('preguntas/deseaborrarLibro',$data);
-    echo view('paginas/footer');
-}
-
-
-
+        $session = session();
+         
+            $item = new usuariosModel();
+            $datos = $item->where('id_usuario',$id_usuario)->first();
+            $item->where('id_usuario',$id_usuario)->delete($id_usuario);
+            return $this->response->redirect(site_url('Home/agregar_usuario'));
+        
+            return $this->response->redirect(site_url('Home/agregar_usuario'));
+       
+            //echo "Borrar registro".$id_usuario;
+    
+        }
 
 
 

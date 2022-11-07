@@ -192,7 +192,7 @@
             <td><?php echo $item['Amaterno'];?></td>
             <td><?php echo $item['email'];?></td>
             
-            <td><a type="button" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Proyecto_en_construccion.jpg/800px-Proyecto_en_construccion.jpg" class="btn btn-danger">Eliminar</a></td>
+            <td><a href="<?=base_url('borrarUsuarios/'.$item['id_usuario']);?>"class="btn btn-danger" type="button">Borrar</a></td>
             
           </tr>
         <?php endforeach;?>
