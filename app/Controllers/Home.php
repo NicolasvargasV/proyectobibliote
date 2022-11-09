@@ -60,7 +60,133 @@ class Home extends BaseController
         $data['Listatipousuario'] = $users;
         return view ('usuarios/insertarDato', $data);
     }
+    public function MostrarDato()
+    {
+        $db = \Config\Database::connect();
+        $MiObjeto = new tipousuarioModel ($db);
+        $data=array(
+        'nombre'=> $this->request->getPost('nombre'),
+        'descripcion'=> $this->request->getPost('descripcion'),
+        'estado'=> $this->request->getPost('estado')
+        );
+    
+        $MiObjeto->insert($data);
+        $users= $MiObjeto->findAll();
 
+        $data['Listatipousuario'] = $users;
+        return view ('usuarios/mostrarDato', $data);
+    }
+
+    /*public function edit()
+    {
+        $db = \Config\Database::connect();
+        $MiObjeto = new tipousuarioModel ($db);
+        $data=array(
+        'nombre'=> $this->request->getPost('nombre'),
+        'descripcion'=> $this->request->getPost('descripcion'),
+        'estado'=> $this->request->getPost('estado')
+        );
+    
+        $MiObjeto->insert($data);
+        $users= $MiObjeto->findAll();
+
+        $data['Listatipousuario'] = $users;
+        echo view ('usuarios/edit/', $data);
+        $db = \Config\Database::connect();
+        $model= new tipousuarioModel($db);
+		$request= \Config\Services::request();
+		$id_tipoUsuario=$request->getPostGet('id_tipoUsuario');
+        $users=$model->find([$id_tipoUsuario]);
+        $data=array(
+            'nombre'=> $this->request->getPost('nombre'),
+            'descripcion'=> $this->request->getPost('descripcion'),
+            'estado'=> $this->request->getPost('estado')
+            );
+        
+            $MiObjeto->insert($data);
+            $users3= $MiObjeto->findAll();
+    
+            $data['Listatipousuario'] = $users3;
+            echo view ('usuarios/edit/', $data);
+    }*/
+
+    public function enviarEditarUsuario(){
+        $db = \Config\Database::connect();
+        $userModel= new tipousuarioModel($db);
+		$request= \Config\Services::request();
+		$id_tipoUsuario=$request->getPostGet('id_tipoUsuario');
+        $users=$userModel->find([$id_tipoUsuario]);
+        $userAux=$userModel->find([$id_tipoUsuario]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new tipousuarioModel($db);
+        $users2= $objetito2->findAll();
+        $data['Listatipousuario']=$users2;
+        $data['aux']=$userAux;
+        echo view('usuarios/edit',$data);
+
+    }
+    public function editarUsuario(){
+        $db = \Config\Database::connect();
+        $model= new tipousuarioModel($db);
+		$request= \Config\Services::request();
+		$id_tipoUsuario=$request->getPostGet('id_tipoUsuario');
+        $users=$model->find([$id_tipoUsuario]);
+        $userAux=$model->find([$id_tipoUsuario]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new tipousuarioModel($db);
+        $users2= $objetito2->findAll();
+        $data['Listatipousuario']=$users2;
+        $data['aux']=$userAux;
+
+        $data2 =[
+            
+            "id_tipoUsuario" => $data['aux']['users'][0]['id_tipoUsuario'],
+            "nombre" => $this->request->getPost('nombre'),
+            "descripcion" => $this->request->getPost('descripcion'),
+            "estado" => $this->request->getPost('estado'),
+        ];
+        
+        $model->replace($data2);
+        $db = \Config\Database::connect();
+        $userModel= new tipousuarioModel($db);
+		$request= \Config\Services::request();
+		$id_tipoUsuario=$request->getPostGet('id_tipoUsuario');
+        $users=$userModel->find([$id_tipoUsuario]);
+        $userAux=$userModel->find([$id_tipoUsuario]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new tipousuarioModel($db);
+        $users2= $objetito2->findAll();
+        $data['Listatipousuario']=$users2;
+        $data['aux']=$userAux;
+        echo view('usuarios/insertarDato',$data);
+ 
+    }
+
+    /*public function borrarUsuario(){
+        $db = \Config\Database::connect();
+		$userModel=new tipousuarioModel($db);
+		$request= \Config\Services::request();
+        
+		$id_tipoUsuario=$request->getPostGet('id_tipoUsuario');
+
+		$userModel->delete($id_tipoUsuario);
+		if($userModel->delete($id_tipoUsuario)===false){
+            echo view('paginas/error_borrar_autor');
+        }
+        else{
+            echo view('paginas/felicidades2');
+        }
+		
+            $objetito = new autorModel($db);
+            $users = $objetito->findAll();
+            $data['listaAutor']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            //echo view('formularios/formularioAutor',$data);
+            echo view('paginas/agregarAutor',$data);
+            echo view('paginas/footer');
+
+	}*/
     //Agregar
     public function agregar_usuario()
     {

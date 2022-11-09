@@ -24,15 +24,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Home/insertaDato">
-                            Insertar Datos
-                        </a> 
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Datos usuarios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Home/insertaDato">Insertar datos</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrarDato">Mostrar datos</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.sectormatematica.cl/educmedia.htm">
                             Guias practicas
-                        </a>
+                        </a> 
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://www.iesboliches.org/tecnologia/index.php/16-videos-tecnicas-estudio">

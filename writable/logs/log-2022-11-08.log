@@ -1,390 +1,319 @@
-CRITICAL - 2022-11-07 09:15:13 --> Cannot redeclare App\Controllers\Home::borrarUsuario()
-in APPPATH\Controllers\Home.php on line 259.
- 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
-CRITICAL - 2022-11-07 09:15:16 --> Cannot redeclare App\Controllers\Home::borrarUsuario()
-in APPPATH\Controllers\Home.php on line 259.
- 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
-CRITICAL - 2022-11-07 09:15:35 --> Cannot redeclare App\Controllers\Home::borrarUsuario()
-in APPPATH\Controllers\Home.php on line 259.
- 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
-CRITICAL - 2022-11-07 09:15:37 --> Cannot redeclare App\Controllers\Home::borrarUsuario()
-in APPPATH\Controllers\Home.php on line 259.
- 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
-CRITICAL - 2022-11-07 09:18:43 --> Cannot redeclare App\Controllers\Home::borrarUsuario()
-in APPPATH\Controllers\Home.php on line 261.
- 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
-CRITICAL - 2022-11-07 09:32:12 --> Undefined variable $usuario
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:32:45 --> Undefined variable $usuario
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:33:50 --> Undefined variable $usuario
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:33:51 --> Undefined variable $usuario
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:34:12 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:34:13 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:34:14 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:36:22 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:38:17 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:38:17 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:38:27 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:38:27 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:38:28 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:38:29 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:39:43 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:39:44 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:39:44 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:42:27 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:42:28 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:42:28 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:42:38 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:46:58 --> Undefined array key "id_usuario"
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_usuario"', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:50:18 --> Undefined array key "id_usuario"
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_usuario"', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:56:36 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:56:37 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 09:56:41 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 10:07:02 --> Undefined variable $item1
-in APPPATH\Views\usuarios\registrarUsuario.php on line 187.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item1', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 187)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 10:07:37 --> Undefined array key "item"
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item"', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 10:07:50 --> Undefined array key "id_usuario"
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_usuario"', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 10:08:58 --> Undefined variable $usuarios
-in APPPATH\Views\usuarios\registrarUsuario.php on line 183.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 183)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 10:09:24 --> Undefined array key "id_usuario"
-in APPPATH\Views\usuarios\registrarUsuario.php on line 195.
- 1 APPPATH\Views\usuarios\registrarUsuario.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_usuario"', 'APPPATH\\Views\\usuarios\\registrarUsuario.php', 195)
- 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registrarUsuario.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/registrarUsuario', [], true)
- 5 APPPATH\Controllers\Home.php(71): view('usuarios/registrarUsuario', [...])
- 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_usuario()
- 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 10:56:25 --> syntax error, unexpected token "endif"
-in APPPATH\Controllers\Home.php on line 270.
- 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/agregar_usuario')
- 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/agregar_usuario')
- 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/agregar_usuario')
+ERROR - 2022-11-08 08:13:32 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:13:59 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:15:45 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:15:52 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:16:07 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:16:16 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:27:26 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:30:25 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:30:33 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:31:03 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-08 08:31:12 --> Undefined variable $id_tipoUsuario
+in APPPATH\Controllers\Home.php on line 83.
+ 1 APPPATH\Controllers\Home.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_tipoUsuario', 'APPPATH\\Controllers\\Home.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 08:31:59 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:32:01 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:33:11 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:33:12 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:33:44 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-08 08:33:47 --> Undefined variable $MiObjeto
+in APPPATH\Controllers\Home.php on line 90.
+ 1 APPPATH\Controllers\Home.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $MiObjeto', 'APPPATH\\Controllers\\Home.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 08:39:27 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:43:31 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:45:05 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 08:45:07 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-08 08:55:54 --> syntax error, unexpected variable "$db"
+in APPPATH\Controllers\Home.php on line 134.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/insertaDato')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/insertaDato')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/insertaDato')
  4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 10:56:51 --> syntax error, unexpected token "else"
-in APPPATH\Controllers\Home.php on line 269.
- 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/agregar_usuario')
- 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/agregar_usuario')
- 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/agregar_usuario')
+CRITICAL - 2022-11-08 08:56:02 --> syntax error, unexpected variable "$db"
+in APPPATH\Controllers\Home.php on line 134.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/insertaDato')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/insertaDato')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/insertaDato')
  4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 10:57:09 --> syntax error, unexpected token "endif"
-in APPPATH\Controllers\Home.php on line 271.
- 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/agregar_usuario')
- 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/agregar_usuario')
- 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/agregar_usuario')
- 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
- 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 10:57:17 --> Class "App\Models\usuarios" not found
-in APPPATH\Controllers\Home.php on line 265.
- 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->borrarUsuarios('33')
- 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-ERROR - 2022-11-07 16:36:33 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 08:57:08 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -399,7 +328,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 18:11:35 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 08:57:21 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -414,7 +343,18 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 18:25:56 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+CRITICAL - 2022-11-08 12:35:10 --> Undefined variable $dato
+in APPPATH\Views\usuarios\edit.php on line 85.
+ 1 APPPATH\Views\usuarios\edit.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dato', 'APPPATH\\Views\\usuarios\\edit.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/edit', [...], true)
+ 5 APPPATH\Controllers\Home.php(114): view('usuarios/edit', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->enviarEditarUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 12:35:11 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -429,7 +369,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 19:50:36 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 12:35:14 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -444,7 +384,18 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:02:08 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+CRITICAL - 2022-11-08 12:35:19 --> Undefined variable $dato
+in APPPATH\Views\usuarios\edit.php on line 85.
+ 1 APPPATH\Views\usuarios\edit.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dato', 'APPPATH\\Views\\usuarios\\edit.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/edit', [...], true)
+ 5 APPPATH\Controllers\Home.php(114): view('usuarios/edit', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->enviarEditarUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 12:36:20 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -459,7 +410,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:02:36 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 12:36:22 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -474,7 +425,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:02:54 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 12:42:02 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -489,7 +440,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:02:56 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 12:42:30 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -504,7 +455,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:04:18 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 12:42:32 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -519,7 +470,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:10:19 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 12:42:42 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -534,7 +485,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:12:27 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 12:43:39 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -549,7 +500,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:24:48 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 12:43:54 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -564,7 +515,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:24:54 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 13:31:07 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -579,7 +530,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:29:31 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 23:18:07 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -594,7 +545,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:29:35 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 23:21:29 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -609,7 +560,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:30:15 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 23:25:13 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -624,7 +575,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:30:19 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 23:25:19 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -639,7 +590,7 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:31:26 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+ERROR - 2022-11-08 23:26:02 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -654,7 +605,47 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:31:30 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+CRITICAL - 2022-11-08 23:26:06 --> Undefined variable $Listatipousuario
+in APPPATH\Views\usuarios\mostrarDato.php on line 116.
+ 1 APPPATH\Views\usuarios\mostrarDato.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Listatipousuario', 'APPPATH\\Views\\usuarios\\mostrarDato.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\mostrarDato.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/mostrarDato', [], true)
+ 5 APPPATH\Controllers\Home.php(65): view('usuarios/mostrarDato')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->MostrarDato()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 23:27:02 --> Undefined variable $MiObjeto
+in APPPATH\Controllers\Home.php on line 65.
+ 1 APPPATH\Controllers\Home.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $MiObjeto', 'APPPATH\\Controllers\\Home.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->MostrarDato()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 23:27:42 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 67.
+ 1 APPPATH\Controllers\Home.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->MostrarDato()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 23:28:34 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(73): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->MostrarDato()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-08 23:34:13 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
 #1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
@@ -669,180 +660,3 @@ Stack trace:
 #10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
-ERROR - 2022-11-07 20:32:20 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
-Stack trace:
-#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
-#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
-#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
-#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
-#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
-#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
-#12 {main}
-ERROR - 2022-11-07 20:32:26 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
-Stack trace:
-#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
-#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
-#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
-#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
-#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
-#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
-#12 {main}
-ERROR - 2022-11-07 20:39:24 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
-Stack trace:
-#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
-#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
-#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
-#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
-#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
-#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
-#12 {main}
-ERROR - 2022-11-07 20:39:28 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
-Stack trace:
-#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
-#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
-#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
-#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
-#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
-#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
-#12 {main}
-ERROR - 2022-11-07 20:41:53 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
-Stack trace:
-#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
-#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
-#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
-#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
-#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
-#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
-#12 {main}
-ERROR - 2022-11-07 20:41:57 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
-Stack trace:
-#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
-#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
-#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
-#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
-#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
-#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
-#12 {main}
-ERROR - 2022-11-07 20:43:23 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
-Stack trace:
-#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
-#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
-#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
-#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
-#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
-#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
-#12 {main}
-ERROR - 2022-11-07 20:43:50 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
-Stack trace:
-#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
-#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
-#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
-#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
-#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
-#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
-#12 {main}
-ERROR - 2022-11-07 20:43:55 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
-Stack trace:
-#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
-#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
-#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
-#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
-#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
-#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
-#12 {main}
-ERROR - 2022-11-07 20:44:10 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
-Stack trace:
-#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
-#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
-#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
-#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
-#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
-#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
-#12 {main}
-ERROR - 2022-11-07 20:44:14 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
-Stack trace:
-#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ti...', 0)
-#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
-#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
-#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
-#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
-#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
-#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
-#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(57): CodeIgniter\Model->insert(Array)
-#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->InsertaDato()
-#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
-#12 {main}
-CRITICAL - 2022-11-07 21:51:42 --> Too few arguments to function App\Controllers\Home::edit(), 0 passed in C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php on line 904 and exactly 1 expected
-in APPPATH\Controllers\Home.php on line 64.
- 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->edit()
- 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2022-11-07 21:53:57 --> Too few arguments to function App\Controllers\Home::edit(), 0 passed in C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php on line 904 and exactly 1 expected
-in APPPATH\Controllers\Home.php on line 64.
- 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->edit()
- 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
- 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

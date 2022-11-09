@@ -74,36 +74,12 @@
     </nav>
 </body>
 
-<div class="container-sm">
-  <body> 
-    <!-- esto es el header -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://media.istockphoto.com/vectors/students-in-audience-young-people-listening-lecture-in-university-vector-id1211520511?k=20&m=1211520511&s=170667a&w=0&h=fhcEssLGr5OudlOVwXrwiT81ulNZf4-tRPJqG7TqjwU=" width="100%" height="50%">
-        </div>
-        <div class="carousel-item">
-          <img src="https://www.redacademica.edu.co/sites/default/files/2021-12/TRABAJO%20AUTONOMO_0.jpg" width="100%" height="50%">
-        </div>
-        <div class="carousel-item">
-          <img src="https://ipla.cl/wp-content/uploads/2021/12/Header-IPLA-CL-SECCIONES-INTERNAS-EPJA.jpg" width="100%" height="50%">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>     
-
   <!-- formulario -->
   <br></b>
     <div class ="col border-primary">
-      <h3>Registrar un tipo de usuario</h3>
-      <form action="<?php echo base_url('Home/InsertaDato'); ?>" method="post">
+      <h3>Editar un tipo de usuario</h3>
+      <form method="POST" action="<?php echo base_url(); ?>/Home/editarUsuario?id_tipoUsuario=<?php echo $aux['users'][0]['id_tipoUsuario']; ?>">
+        
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Nombre </label>
           <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="emailHelp">
@@ -114,15 +90,13 @@
           <input type="text" class="form-control" name="descripcion" id="descripcion">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">estado</label>
+          <label for="exampleInputPassword1" class="form-label">Estado</label>
           <input type="text" class="form-control" name="estado" id="estado">
         </div>
-        <button type="submit" class="btn btn-primary">agregar</button>
+        <button type="submit" class="btn btn-primary">Editar</button>
       </form>
     </div>
 
-  <!-- Despliege formulario -->
- 
   <br></b>
   <br></b> 
   <!-- CONTENT -->

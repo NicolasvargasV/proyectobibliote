@@ -20,16 +20,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Cursos
-              </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">1° MEDIO</a></li>
-            <li><a class="dropdown-item" href="#">2° MEDIO</a></li>
-            <li><a class="dropdown-item" href="#">3° MEDIO</a></li>
-            <li><a class="dropdown-item" href="#">4° MEDIO</a></li>
-          </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cursos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1° MEDIO</a></li>
+              <li><a class="dropdown-item" href="#">2° MEDIO</a></li>
+              <li><a class="dropdown-item" href="#">3° MEDIO</a></li>
+              <li><a class="dropdown-item" href="#">4° MEDIO</a></li>
+            </ul>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               PTU
@@ -39,16 +40,16 @@
               <li><a class="dropdown-item" href="https://drive.google.com/file/d/1kheokWKherWaNQ85OkZc48CbBDPmW7-f/view">Guias</a></li>
               <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=OxgnJ-IgxA0">Ensayos</a></li>       
             </ul>
-            <li class="nav-item">
-              <a class="nav-link" href="/proyectobibliote/Home/agregar_usuario"> Registrarse como socio</a>
-            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/proyectobibliote/Home/agregar_usuario"> Registrarse como socio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disable" href="#">
-                Contacto
+              Contacto
             </a>
           </li>
-        </ul>
+        </ul> 
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         </form>
@@ -57,9 +58,9 @@
                 <a type="button" href="<?php echo base_url('/index');?>" class="btn btn-success">Cerrar Sesion</a>
             </li><!-- el href es  Home/Logout-->
         </ul>
-            </div>
-        </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 </body>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>

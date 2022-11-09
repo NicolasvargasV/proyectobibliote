@@ -99,30 +99,37 @@
       </button>
     </div>     
 
-  <!-- formulario -->
-  <br></b>
-    <div class ="col border-primary">
-      <h3>Registrar un tipo de usuario</h3>
-      <form action="<?php echo base_url('Home/InsertaDato'); ?>" method="post">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Nombre </label>
-          <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="emailHelp">
-        </div>
-
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Descripcion</label>
-          <input type="text" class="form-control" name="descripcion" id="descripcion">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">estado</label>
-          <input type="text" class="form-control" name="estado" id="estado">
-        </div>
-        <button type="submit" class="btn btn-primary">agregar</button>
-      </form>
-    </div>
-
   <!-- Despliege formulario -->
- 
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripciones</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Accion</th>
+      </tr>
+      </thead>
+      <tbody>
+      <br></b>
+        <h3>Tabla de los usuarios existentes  </h3>
+        <?php foreach ($Listatipousuario as $item):?>
+          
+          <tr>
+            <td><?php echo $item['id_tipoUsuario'];?></td>
+            <td><?php echo $item['nombre'];?></td>
+            <td><?php echo $item['descripcion'];?></td>
+            <td><?php echo $item['estado'];?></td>
+            <td><a href="<?php echo base_url(); ?>/Home/enviarEditarUsuario?id_tipoUsuario=<?php echo $item['id_tipoUsuario']; ?>" class="btn btn-warning" role="button" >Editar<i class="fa fa-trash"></i></a>
+            <a href="<?php echo base_url(); ?>/Home/enviarEditarUsuario?id_tipoUsuario=<?php echo $item['id_tipoUsuario']; ?>" class="btn btn-danger" role="button" >Eliminar<i class="fa fa-trash"></i></a>
+            </td>
+          </tr>
+        <?php endforeach;?>
+    
+    </tbody>
+  </table>
+    
+
   <br></b>
   <br></b> 
   <!-- CONTENT -->
