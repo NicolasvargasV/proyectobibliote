@@ -77,53 +77,53 @@
         </div>
     </nav>
 
-<body>
-    <div class = "container">
-        <div class="container-fluid">
-            <br></b>
-             <!-- formulario guia-->
-            <div class ="col border-primary">
-                <form action="<?php echo base_url('Home/nuevaguia'); ?>" method="post">
-                    <div class="mb-3">
-                        <label for="nombre_guia" class="form-label">Ingrese el nombre de la guia</label>
-                        <input type="text" class="form-control" name="nombre_guia" id="nombre_guia" aria-describedby="emailHelp">    
-                    </div>
-                    <div class="mb-3">
-                        <label for="tipo_guia" class="form-label">Ingrese el tipo (aprendizaje, guia de estudio, apoyo, desarrollo, control)</label>
-                        <input type="text" class="form-control" name="tipo_guia" id="tipo_guia">
-                    </div>
-                    <div class="mb-3">
-                        <label for="link_vid_guia" class="form-label">Ingrese un link referente a la guia</label>
-                        <input type="text" class="form-control" name="link_vid_guia" id="link_vid_guia">
-                    </div>
-                    <button type="submit" class="btn btn-primary">agregar</button>
-                </form>
-            </div>
+    <body>
+        <div class="container body-content">
+            <center><h1>Listado de guias </h1></center>
+            <table id="datatables" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre de la guia</th>
+                        <th scope="col">tipo de guia </th>
+                        <th scope="col">link referencial de la guia</th>
+                    </tr>
+                </thead>
+                <h5>Opciones de descarga  </h5>
+                <?php foreach ($Listaguia as $item):?>  
+                <tr>                
+                    <td><?php echo $item['nombre_guia'];?></td>
+                    <td><?php echo $item['tipo_guia'];?></td>
+                    <td><?php echo $item['link_vid_guia'];?></td>
+                
+                </tr>
+                <?php endforeach;?>   
+            </table>
+            <footer>
+                <p id="fecha">
+                    <script type="text/javascript">
+                        var d = new Date();
+                        var year = d.getFullYear();
+                        document.getElementById("fecha").innerHTML ='<center>'+ '<br>' + '<strong>' +year + '</strong>'+'</center>';
+                    </script>
+                </p>
+            </footer>
         </div>
-    </div>
-<body>
 
-<script src=<?php echo base_url("js/jquery-3.3.1.js");?>></script>
-<script src=<?php echo base_url("js/jquery.dataTables.min.js");?>></script>
-<script src=<?php echo base_url("js/dataTables.buttons.min.js");?>></script>
-<script src=<?php echo base_url("js/buttons.flash.min.js");?>></script>
-<script src=<?php echo base_url("js/jszip.min.js");?>></script>
-<script src=<?php echo base_url("js/pdfmake.min.js");?>></script>
-<script src=<?php echo base_url("js/vfs_fonts.js");?>></script>
-<script src=<?php echo base_url("js/buttons.html5.min.js");?>></script>
-<script src=<?php echo base_url("js/bootstrap.js");?>></script>
-<script src=<?php echo base_url("js/scripts.js");?>></script>
-<script src=<?php echo base_url("js/bootstrap-toggle.min.js");?>></script>
+        <script src=<?php echo base_url("js/jquery-3.3.1.js");?>></script>
+        <script src=<?php echo base_url("js/jquery.dataTables.min.js");?>></script>
+        <script src=<?php echo base_url("js/dataTables.buttons.min.js");?>></script>
+        <script src=<?php echo base_url("js/buttons.flash.min.js");?>></script>
+        <script src=<?php echo base_url("js/jszip.min.js");?>></script>
+        <script src=<?php echo base_url("js/pdfmake.min.js");?>></script>
+        <script src=<?php echo base_url("js/vfs_fonts.js");?>></script>
+        <script src=<?php echo base_url("js/buttons.html5.min.js");?>></script>
+        <script src=<?php echo base_url("js/bootstrap.js");?>></script>
+        <script src=<?php echo base_url("js/scripts.js");?>></script>
+        <script src=<?php echo base_url("js/bootstrap-toggle.min.js");?>></script>
 
+        <script>
 
-
-
-
-<script>
-
-    
-</script>
-
+        </script>
 </body>
 
 

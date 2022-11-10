@@ -31,90 +31,97 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="/Home/insertaDato">
-                      Insertar Datos
-                  </a> 
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.sectormatematica.cl/educmedia.htm">
-                    Guias practicas
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://www.iesboliches.org/tecnologia/index.php/16-videos-tecnicas-estudio">
-                  Tecnicas de estudios
-                  </a>
-                </li>
-                <div class="btn-group">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/insertaDato">
+                            Insertar Datos
+                        </a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.sectormatematica.cl/educmedia.htm">
+                            Guias practicas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.iesboliches.org/tecnologia/index.php/16-videos-tecnicas-estudio">
+                            Tecnicas de estudios
+                        </a>
+                    </li>
+                    <div class="btn-group">
+                  
                   <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Accion
+                    
+                  Accion
                   </button>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_libro">agregar libro</a></li>
                     <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_guia">agregar guia</a></li>
                     <li><a class="dropdown-item" href="#">agregar control</a></li>
                     <li><hr class="dropdown-divider"></li>
+                    
                   </ul>
-                </div>
-              </ul>
-              <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              </form>
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a type="button" href="<?php echo base_url("signin");?>" class="btn btn-success">INGRESAR</a>
-                </li>
-              </ul>
+      
+                  
+                  </div>
+
+                  </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a type="button" href="<?php echo base_url("signin");?>" class="btn btn-success">INGRESAR</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-      </nav>
-</body>
-<body>
-  <br></br>
-   <div class = "container" >
-      <div class="container-fluid">
-      <!-- formulario libro -->
-        <br></b>
-        <div class ="col border-primary">
-          <form action="<?php echo base_url('Home/nuevolibro'); ?>" method="post">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Nombre del libro </label>
-              <input type="text" class="form-control" name="Nombre_lib" id="Nombre_lib" aria-describedby="emailHelp">
-              
-              <div class="mb-3">
-                <label for="Autor_lib" class="form-label">Autor</label>
-                <input type="text" class="form-control" name="Autor_lib" id="Autor_lib">
-              </div>
-              <div class="mb-3">
-                <label for="Genero_lib" class="form-label">genero del libro</label>
-                <input type="text" class="form-control" name="Genero_lib" id="Genero_lib">
-              </div>
-              <div class="mb-3">
-                <label for="resumen_lib" class="form-label">agregar resumen</label>
-                <input type="text" class="form-control" name="resumen_lib" id="resumen_lib">
-              </div>
-              <button type="submit" class="btn btn-primary">Guardar</button>
-            </div>
-          </form>
         </div>
-      </div>
-    </div>
+    </nav>
+</body>
 
-    <script src=https://code.jquery.com/jquery-3.5.1.js ></script>
-    <script src=https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js></script>
-    <script src=https://cdn.datatables.net/1.12.1/js/dataTables.semanticui.min.js></script>
-    <script src=https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js></script>
+ <!-- Despliege formulario -->
 
-    <script>
-      $(document).ready(function () {
-          $('#datatables').DataTable();
-      });
-    </script>
+ <div class = "container">
+  <table  id="datatables" class="ui celled table" style="width:100%">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre del libro </th>
+          <th scope="col">Autor</th>
+          <th scope="col">genero del libro</th>
+          <th scope="col">agregar resumen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <br></b>
+        <br></b>
+        <h3>Libros en la bd  </h3>
+        <?php foreach ($Listalibro as $item):?>
+        <tr>
+          <td><?php echo $item['cod_lib'];?></td>
+          <td><?php echo $item['Nombre_lib'];?></td>
+          <td><?php echo $item['Autor_lib'];?></td>
+          <td><?php echo $item['Genero_lib'];?></td>
+          <td><?php echo $item['resumen_lib'];?></td>
+        </tr>
+        <?php endforeach;?>
+      
+      </tbody>
+    </table>
+  </div>
+  <script src=https://code.jquery.com/jquery-3.5.1.js ></script>
+  <script src=https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js></script>
+  <script src=https://cdn.datatables.net/1.12.1/js/dataTables.semanticui.min.js></script>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js></script>
+
+  <script>
+    $(document).ready(function () {
+        $('#datatables').DataTable();
+    });
+  </script>
 
 
-<script>
+  <script>
 
     $('#datatables').DataTable( {
         responsive: true,
@@ -141,9 +148,6 @@
                 "sortDescending": ": Activar para ordenar la columna de manera descendente"
     }
     } );
-
-</script>
-    <br></br>
-    
-
+  </script>
+  <br></br>
 </body>

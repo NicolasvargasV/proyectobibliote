@@ -1,38 +1,43 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Codeigniter Login with Email/Password Example</title>
-  </head>
-  <body>
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-5">
-                
-                <h2>Login in</h2>
-                
-                <?php if(session()->getFlashdata('msg')):?>
-                    <div class="alert alert-warning">
-                       <?= session()->getFlashdata('msg') ?>
-                    </div>
-                <?php endif;?>
-                <form action="<?php echo base_url(); ?>/SigninController/loginAuth" method="post">
-                    <div class="form-group mb-3">
-                        <input type="email" name="email" placeholder="Email" value="<?= set_value('email') ?>" class="form-control" >
-                    </div>
-                    <div class="form-group mb-3">
-                        <input type="password" name="password" placeholder="Password" class="form-control" >
-                    </div>
+    <title>INICIAR SESION</title>
+    <link href="<?php echo base_url() ?>/public/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="<?php echo base_url() ?>/public/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" ></script>
+</head>
+<body>
+    <body class = "m-0 vh-100 row justify-content-center align-item-center">
+        <div class = "col-xxl-5 col-lg-5 col-md-8 col-sm-12 pt-5 mt-5">
+            <div class="card text-bg-success">
+                <div class="card-header text-center">
+                    <h2>Iniciar Sesion</h2>
+                    <?php if(session()->getFlashdata('msg')):?>
+                        <div class="alert alert-warning">
+                        <?= session()->getFlashdata('msg') ?>
+                        </div>
+                    <?php endif;?>
+                </div>
+                <div class="card-body">
                     
-                    <div class="d-grid">
-                         <button type="submit" class="btn btn-success">Signin</button>
-                    </div>     
-                </form>
+                    <form action="<?php echo base_url("/SigninController/loginAuth"); ?>" method="post">
+                        <div class="mb-3">
+                            <input type="email" name="email" placeholder="Email" value="<?= set_value('email') ?>" class="form-control" >
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" name="password" placeholder="Password" class="form-control" >
+                        </div>
+                        <button type="submit" class="btn btn-dark">Ingresar</button>
+
+                        <a href ="<?php echo base_url() ?>/signup" class=" btn btn-link text-white">Registarse</button>
+                    </form>
+                </div>
             </div>
-              
         </div>
     </div>
-  </body>
+    <script src="<?php echo base_url() ?>/public/js/popper.min.js"></script>
+    <script src="<?php echo base_url() ?>/public/js/bootstrap.min.js"></script> 
+</body>
 </html>

@@ -24,7 +24,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Datos usuarios
@@ -34,10 +33,23 @@
                             <li><a class="dropdown-item" href="Home/mostrarDato">Mostrar datos</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.sectormatematica.cl/educmedia.htm">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Datos libros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Home/agregar_libro">Insertar libros</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrar_libro">Mostrar libros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Guias practicas
-                        </a> 
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Home/agregar_guia">Agregar guias</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar guias</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://www.iesboliches.org/tecnologia/index.php/16-videos-tecnicas-estudio">
