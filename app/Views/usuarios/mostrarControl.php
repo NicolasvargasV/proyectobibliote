@@ -134,9 +134,14 @@ const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ['Lenguaje', 'Matematicas', 'fisica', 'Ciencias', 'Quimica', 'Historia'],
-        datasets: [{
+        datasets: 
             label: '# of Votes',
-            data: [12, 18, 3, 5, 2, 3],
+            data: [<?php foreach ($ListaUsuario as $item):?>
+          
+            <tr>
+            <td><?php echo $item['id_usuario'];?></td>],
+            </tr>
+        <?php endforeach;?>
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',

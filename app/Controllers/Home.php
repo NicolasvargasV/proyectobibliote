@@ -186,6 +186,30 @@ class Home extends BaseController
         
      );
 
+     $email = \Config\Services::email();
+     $email->setTo($this->request->getPost('email'));
+     $email->setFrom('n_vargas@alumnos.upla.cl', 'Confirm Registration');
+     
+     $email->setSubject("hola bienvenido");
+     $email->setMessage("Usted se ha registrado correctamente <br>"+
+     "Bienvenido");
+     if ($email->send()) 
+     {
+         echo 'Email successfully sent';
+     } 
+     else 
+     {
+         $data = $email->printDebugger(['headers']);
+         print_r($data);
+     }
+
+
+
+
+
+
+
+
     $MiObjeto->insert($data);
     $users= $MiObjeto->findAll();
     $data['ListaUsuario'] = $users;
