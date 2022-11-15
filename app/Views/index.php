@@ -51,32 +51,27 @@
                             <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar guias</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://www.iesboliches.org/tecnologia/index.php/16-videos-tecnicas-estudio">
-                            Tecnicas de estudios
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Control guias
                         </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Home/agregar_guia">Agregar control</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar control</a></li>
+                        </ul>
                     </li>
                     <div class="btn-group">
-                  
-                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    
-                  Accion
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_libro">agregar libro</a></li>
-                    <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_guia">agregar guia</a></li>
-                    <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_control">agregar control</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    
-                  </ul>
-      
-                  
-                  </div>
-
-                  </ul>
-
-
-
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Accion
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_libro">agregar libro</a></li>
+                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_guia">agregar guia</a></li>
+                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_control">agregar control</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                        </ul>
+                    </div>
+                </ul>
 
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

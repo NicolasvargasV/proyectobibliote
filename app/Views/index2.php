@@ -45,8 +45,8 @@
             <a class="nav-link" href="/proyectobibliote/Home/agregar_usuario"> Registrarse como socio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disable" href="#">
-              Contacto
+            <a class="nav-link disable" href="Home/nuevoUsuario">
+              Socios registrados
             </a>
           </li>
         </ul> 

@@ -20,9 +20,19 @@ class tipousuarioModel extends Model
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
-    protected $validationRules    = [];
-    protected $validationMessages = [];
 
     protected $skipValidation     = false;
+
+    protected $validationRules = [
+        'nombre' => 'required',
+        'descripcion' => 'required',
+        'estado' => 'required'
+    ];
+
+    protected $validationMessages =[
+        'nombreAutor' =>['required'=>'debe ingresar un valor'],
+        'descripcion'=>['required'=>'Ingrese descripcion'],
+            'estado'=>['required'=>'Ingrese descripcion']
+    ];
     
 }

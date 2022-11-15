@@ -24,8 +24,6 @@ class Home extends BaseController
         return view('welcome_message', $data);
     }
 
-
-
     public function saludos()
     {
         $db = \Config\Database::connect();
@@ -45,7 +43,6 @@ class Home extends BaseController
 
     public function InsertaDato()
     {
-
         $db = \Config\Database::connect();
         $MiObjeto = new tipousuarioModel ($db);
         $data=array(
@@ -59,7 +56,39 @@ class Home extends BaseController
 
         $data['Listatipousuario'] = $users;
         return view ('usuarios/insertarDato', $data);
+
+        if($model->replace($data)=== false){
+             
+
+        }
+        
     }
+    
+    public function store(){
+        helper(['form']);
+        $validacion = [
+            'nombre'          => 'required|min_length[2]|max_length[50]',
+            'descripcion'         => 'required|min_length[4]|max_length[100]',
+            'estado'      => 'required|min_length[4]'
+        ];
+
+        if($this->validate($validacion)){  
+            $MiObjeto = new tipousuarioModel();
+            $data = [
+                'name'     => $this->request->getPost('name'),
+                'descripcion'    => $this->request->getPost('email'),
+                'estado' => $this->request->getPost('password')
+            ];
+            $MiObjeto->insert($data);
+
+            return redirect()->to('/insertaDato');
+        }else{
+            $data['validation'] = $this->validator;
+            echo view('insertaDato', $data);
+        }
+        
+    }
+
     public function MostrarDato()
     {
         $db = \Config\Database::connect();
@@ -76,39 +105,6 @@ class Home extends BaseController
         $data['Listatipousuario'] = $users;
         return view ('usuarios/mostrarDato', $data);
     }
-
-    /*public function edit()
-    {
-        $db = \Config\Database::connect();
-        $MiObjeto = new tipousuarioModel ($db);
-        $data=array(
-        'nombre'=> $this->request->getPost('nombre'),
-        'descripcion'=> $this->request->getPost('descripcion'),
-        'estado'=> $this->request->getPost('estado')
-        );
-    
-        $MiObjeto->insert($data);
-        $users= $MiObjeto->findAll();
-
-        $data['Listatipousuario'] = $users;
-        echo view ('usuarios/edit/', $data);
-        $db = \Config\Database::connect();
-        $model= new tipousuarioModel($db);
-		$request= \Config\Services::request();
-		$id_tipoUsuario=$request->getPostGet('id_tipoUsuario');
-        $users=$model->find([$id_tipoUsuario]);
-        $data=array(
-            'nombre'=> $this->request->getPost('nombre'),
-            'descripcion'=> $this->request->getPost('descripcion'),
-            'estado'=> $this->request->getPost('estado')
-            );
-        
-            $MiObjeto->insert($data);
-            $users3= $MiObjeto->findAll();
-    
-            $data['Listatipousuario'] = $users3;
-            echo view ('usuarios/edit/', $data);
-    }*/
 
     public function enviarEditarUsuario(){
         $db = \Config\Database::connect();
@@ -158,36 +154,9 @@ class Home extends BaseController
         $users2= $objetito2->findAll();
         $data['Listatipousuario']=$users2;
         $data['aux']=$userAux;
-        echo view('usuarios/insertarDato',$data);
+        echo view('usuarios/mostrarDato',$data);
  
     }
-
-    /*public function borrarUsuario(){
-        $db = \Config\Database::connect();
-		$userModel=new tipousuarioModel($db);
-		$request= \Config\Services::request();
-        
-		$id_tipoUsuario=$request->getPostGet('id_tipoUsuario');
-
-		$userModel->delete($id_tipoUsuario);
-		if($userModel->delete($id_tipoUsuario)===false){
-            echo view('paginas/error_borrar_autor');
-        }
-        else{
-            echo view('paginas/felicidades2');
-        }
-		
-            $objetito = new autorModel($db);
-            $users = $objetito->findAll();
-            $data['listaAutor']=$users;
-            echo view('paginas/header');
-            echo view('paginas/newnavbar');
-            //echo view('formularios/formularioAutor',$data);
-            echo view('paginas/agregarAutor',$data);
-            echo view('paginas/footer');
-
-	}*/
-    //Agregar
     public function agregar_usuario()
     {
         $db = \Config\Database::connect();
@@ -220,7 +189,7 @@ class Home extends BaseController
     $MiObjeto->insert($data);
     $users= $MiObjeto->findAll();
     $data['ListaUsuario'] = $users;
-    return view ('usuarios/registrarUsuario', $data);
+    return view ('usuarios/mostrarUsuario', $data);
 
     }
 
@@ -263,7 +232,7 @@ class Home extends BaseController
     $MiObjeto->insert($data);
     $users= $MiObjeto->findAll();
     $data['Listalibro'] = $users;
-    return view ('usuarios/registrarlibro', $data);
+    return view ('usuarios/mostrarLibro', $data);
 
     }
 
@@ -304,7 +273,7 @@ class Home extends BaseController
     $MiObjeto->insert($data);
     $users= $MiObjeto->findAll();
     $data['Listaguia'] = $users;
-    return view ('usuarios/registrarguia', $data);
+    return view ('usuarios/mostrarGuia', $data);
 
     }
 
@@ -317,6 +286,15 @@ class Home extends BaseController
         $data['Listacontrol'] = $users;
 
         return view('usuarios/registrarcontrol', $data);
+    }
+    public function mostrar_control()
+    {
+        $db = \Config\Database::connect();
+        $MiObjeto= new controlesModel($db);
+        $users= $MiObjeto->findAll();
+        $data['Listacontrol'] = $users;
+
+        return view('usuarios/mostrarControl', $data);
     }
 
     public function nuevocontrol()
@@ -335,7 +313,7 @@ class Home extends BaseController
     $MiObjeto->insert($data);
     $users= $MiObjeto->findAll();
     $data['Listacontrol'] = $users;
-    return view ('usuarios/registrarcontrol', $data);
+    return view ('usuarios/mostrarControl', $data);
 
     }
 

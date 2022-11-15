@@ -55,10 +55,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/proyectobibliote/Home/agregar_usuario"> Registrarse como socio</a>
+            <a class="nav-link" href="agregar_usuario"> Registrarse como socio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disable" href="NuevoUsuario">
+            <a class="nav-link disable" href="nuevoUsuario">
               Socios registrados
             </a>
           </li>
@@ -76,73 +76,99 @@
   </nav>
 </body>
 
-
-
-
-  <body>
-    <!-- formulario -->
-
-  <?php
-  $session=session();
-  $estadoLog=false;
-  if(isset($session)){
-    if($session->has('isLoggedIn')){
-      if($session->isLoggedIn){
-        $estadoLog =true;
-      }
-    }
-  }
-
-?>
-
-<?php
-    if($estadoLog){
-      ?>
-      <?php
-      if(isset($aux)){
-        print_r("data");
-        $name=$aux['users'][0]['nombreAutor'];
-        print($aux);
-      }
-      else{
-        //print("no data");
-      }
-    }
-?>
-<?php   
-      if($estadoLog)
-  ?>
-
-<div class="container-fluid">
 <br></b>
-<div class ="col border-primary">
-<form action="<?php echo base_url('Home/nuevoUsuario'); ?>" method="post">
- 
-  <div class="mb-3">
-    <label for="rut_Usuario" class="form-label">Ingrese el rut del Usuario</label>
-    <input type="text" class="form-control" name="rut_Usuario" id="rut_Usuario">
-  </div>
-  <div class="mb-3">
-    <label for="fechaNac" class="form-label">Ingrese su fecha de nacimiento</label>
-    <input type="text" class="form-control" type ="date" name="fechaNac" id="fechaNac">
-  </div>
-  <div class="mb-3">
-    <label for="nombres" class="form-label">Ingrese su Nombre</label>
-    <input type="text" class="form-control" name="nombres" id="nombres">
-  </div>
-  <div class="mb-3">
-    <label for="Apaterno" class="form-label">Ingrese el apellido paterno</label>
-    <input type="text" class="form-control" name="Apaterno" id="Apaterno">
-  </div>
-  <div class="mb-3">
-    <label for="Amaterno" class="form-label ">Ingrese el apellido materno</label>
-    <input type="text" class="form-control" name="Amaterno" id="Amaterno">
-  </div>
-  <div class="mb-3">
-    <label for="email" class="form-label">email</label>
-    <input type="text" class="form-control" name="email" id="email">
-  </div>
+<h3>Socios registrados  </h3>
+<!-- Despliege formulario -->
+<table  id="example" class="ui celled table" style="width:100%">
+      <thead>
+      <tr>
+        <th scope="col">ID </th>
+        <th scope="col">Rut del usuario </th>
+        <th scope="col">fecha de nacimiento</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido paterno</th>
+        <th scope="col">Apellido materno</th>
+        <th scope="col">Email</th>
 
-  <button type="submit" class="btn btn-primary">agregar</button>
-</form>
-</div>
+        
+        <th scope="col">Accion</th><!--QUIERO ELIMINAR  -->
+        
+      </tr>
+      </thead>
+      <tbody>
+
+<?php foreach ($ListaUsuario as $item):?>
+          
+          <tr>
+            
+            <td><?php echo $item['id_usuario'];?></td>
+            <td><?php echo $item['rut_Usuario'];?></td>
+            <td><?php echo $item['fechaNac'];?></td>
+            <td><?php echo $item['nombres'];?></td>
+            <td><?php echo $item['Apaterno'];?></td>
+            <td><?php echo $item['Amaterno'];?></td>
+            <td><?php echo $item['email'];?></td>
+            
+            <td><a href="<?=base_url('borrarUsuarios/'.$item['id_usuario']);?>"class="btn btn-danger" type="button">Borrar</a></td>
+            
+          </tr>
+        <?php endforeach;?>
+    
+    </tbody>
+  </table>
+
+
+
+<script src=https://code.jquery.com/jquery-3.5.1.js ></script>
+<script src=https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js></script>
+<script src=https://cdn.datatables.net/1.12.1/js/dataTables.semanticui.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js></script>
+
+
+
+
+    <script>
+
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
+
+    </script>
+
+
+<script>
+
+    $('#example').DataTable( {
+        responsive: true,
+        autoWidth: false,
+        "language": {
+            "processing": "Procesando...",
+            "lengthMenu": "Mostrar _MENU_ registros",
+            "zeroRecords": "No se encontraron resultados",
+            "emptyTable": "Ningún dato disponible en esta tabla",
+            "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "infoFiltered": "(De _MAX_ total records)",
+            "info": "Mostrando la pagina _PAGE_ de _PAGES_",
+             "search": "Buscar:",
+            "infoThousands": ",",
+            "loadingRecords": "Cargando...",
+            "paginate": {
+            "first": "Primero",
+            "last": "Último",
+            "next": "Siguiente",
+            "previous": "Anterior"}
+        },
+            "aria": {
+                "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+                "sortDescending": ": Activar para ordenar la columna de manera descendente"
+    }
+    } );
+
+</script>
+    <br></br>
+    
+
+
+
+
+</body>

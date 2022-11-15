@@ -10,12 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
     </style>
-    
-    <link rel="stylesheet" type="text/css" href=<?php echo base_url("css/jquery.dataTables.min.css");?> />
-    <link rel="stylesheet" type="text/css" href=<?php echo base_url("css/buttons.dataTables.min.css");?> />
-     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+   <!-- Chart.js -->
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js>    </script>
+    <!-- cqry -->
 </head>
-
 
 <body>
 <nav class="navbar navbar-expand-lg bg-white">
@@ -61,7 +59,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="agregar_control">Agregar control</a></li>
-                            <li><a class="dropdown-item" href="mostrar_control">Mostrar control</a></li>
+                            <li><a class="dropdown-item" href="mostrar_control">Mostrar grafico</a></li>
                         </ul>
                     </li>
                     <div class="btn-group">
@@ -88,61 +86,114 @@
             </div>
         </div>
     </nav>
-
-    <body>
-        <div class="container body-content">
-            <center><h1>Listado de guias </h1></center>
-            <table id="datatables" class="display" style="width:100%">
-                <thead>
-                    <tr>
-                        <th scope="col">Nombre de la guia</th>
-                        <th scope="col">tipo de guia </th>
-                        <th scope="col">link referencial de la guia</th>
-                    </tr>
-                </thead>
-                <h5>Opciones de descarga  </h5>
-                <?php foreach ($Listaguia as $item):?>  
-                <tr>                
-                    <td><?php echo $item['nombre_guia'];?></td>
-                    <td><?php echo $item['tipo_guia'];?></td>
-                    <td><?php echo $item['link_vid_guia'];?></td>
-                
-                </tr>
-                <?php endforeach;?>   
-            </table>
-            <footer>
-                <p id="fecha">
-                    <script type="text/javascript">
-                        var d = new Date();
-                        var year = d.getFullYear();
-                        document.getElementById("fecha").innerHTML ='<center>'+ '<br>' + '<strong>' +year + '</strong>'+'</center>';
-                    </script>
-                </p>
-            </footer>
-        </div>
-
-        <script src=<?php echo base_url("js/jquery-3.3.1.js");?>></script>
-        <script src=<?php echo base_url("js/jquery.dataTables.min.js");?>></script>
-        <script src=<?php echo base_url("js/dataTables.buttons.min.js");?>></script>
-        <script src=<?php echo base_url("js/buttons.flash.min.js");?>></script>
-        <script src=<?php echo base_url("js/jszip.min.js");?>></script>
-        <script src=<?php echo base_url("js/pdfmake.min.js");?>></script>
-        <script src=<?php echo base_url("js/vfs_fonts.js");?>></script>
-        <script src=<?php echo base_url("js/buttons.html5.min.js");?>></script>
-        <script src=<?php echo base_url("js/bootstrap.js");?>></script>
-        <script src=<?php echo base_url("js/scripts.js");?>></script>
-        <script src=<?php echo base_url("js/bootstrap-toggle.min.js");?>></script>
-
-        <script>
-
-        </script>
 </body>
 
 
 
 
 
+<body>
+<div class = "container">
+<!-- apiresPHP Chart.js -->
+<h1>Grafico asignatura controles</h1>
+<canvas id="myChart" width="400" height="400"></canvas>
 
-  
+<script>
+var crx=document.getElementById("mychart").getContext("2d");
+var myChart= new Chart(ctx,{
+    type:"bar",
+    data:{
+        datasets:{[
+            label:'stock de propductos',
+            backgroundColor:['#EF785E','#C8EF5E','#61E4D5','#6188E4','#E46161','#8067E7','#5B9FBF','#6FE2B2','#AAA8B9','#E463E5'],
+            borderColor:['black'],
+            borderWidth:1
+        ]}
+    },
+    options:{
+        scales:{
+            y:{
+                beginAtZero:true
+            }
+
+        }
+    }
+    
+})
+let url=''
+</script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Lenguaje', 'Matematicas', 'fisica', 'Ciencias', 'Quimica', 'Historia'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 18, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
