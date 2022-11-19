@@ -1,0 +1,1371 @@
+CRITICAL - 2022-11-19 12:48:45 --> Undefined variable $ListaUsuario
+in APPPATH\Views\usuarios\mostrarControl.php on line 139.
+ 1 APPPATH\Views\usuarios\mostrarControl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ListaUsuario', 'APPPATH\\Views\\usuarios\\mostrarControl.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\mostrarControl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/mostrarControl', [], true)
+ 5 APPPATH\Controllers\Home.php(320): view('usuarios/mostrarControl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 12:53:34 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 12:53:34 --> 220 smtp.googlemail.com ESMTP x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+
+to: 555 5.5.2 Syntax error. x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+
+quit: 221 2.0.0 closing connection x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+
+CRITICAL - 2022-11-19 12:53:34 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:53:31 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379262b926e51.81959487@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:53:31 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379262b926e51.81959487@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection x45-20020a05683040ad00b0066871c3adb3sm3009955ott.28 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:53:31 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379262b926e51.81959487@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 12:53:56 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 12:53:56 --> 220 smtp.googlemail.com ESMTP z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+
+to: 555 5.5.2 Syntax error. z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+
+quit: 221 2.0.0 closing connection z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+
+CRITICAL - 2022-11-19 12:53:56 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:53:53 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637926419f2e77.29728309@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:53:53 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637926419f2e77.29728309@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection z18-20020a056870739200b00131c3d4d38fsm3792760oam.39 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:53:53 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637926419f2e77.29728309@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 12:53:56 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 12:53:56 --> 220 smtp.googlemail.com ESMTP bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+
+to: 555 5.5.2 Syntax error. bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+
+quit: 221 2.0.0 closing connection bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+
+CRITICAL - 2022-11-19 12:53:56 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:53:54 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379264296c428.72354883@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:53:54 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379264296c428.72354883@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection bc10-20020a056808170a00b003458d346a60sm2682867oib.25 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:53:54 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379264296c428.72354883@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 12:54:17 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 12:54:17 --> 220 smtp.googlemail.com ESMTP k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+
+to: 555 5.5.2 Syntax error. k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+
+quit: 221 2.0.0 closing connection k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+
+CRITICAL - 2022-11-19 12:54:17 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:54:15 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379265745c2a6.90631406@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:54:15 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379265745c2a6.90631406@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection k4-20020a05687015c400b00130d060ce80sm3842706oad.31 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:54:15 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379265745c2a6.90631406@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 12:54:33 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 12:54:33 --> 220 smtp.googlemail.com ESMTP n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+
+to: 555 5.5.2 Syntax error. n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+
+quit: 221 2.0.0 closing connection n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+
+CRITICAL - 2022-11-19 12:54:33 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:54:30 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;63792666e59f51.28751990@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:54:30 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;63792666e59f51.28751990@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection n9-20020a056870558900b0013669485016sm3829436oao.37 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:54:30 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;63792666e59f51.28751990@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 12:59:53 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 12:59:53 --> 220 smtp.googlemail.com ESMTP k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+
+to: 555 5.5.2 Syntax error. k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+
+quit: 221 2.0.0 closing connection k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+
+CRITICAL - 2022-11-19 12:59:53 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:59:51 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637927a71d5dd0.89147271@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:59:51 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637927a71d5dd0.89147271@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection k5-20020a056870d0c500b0014185b2b3d5sm1764966oaa.18 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 12:59:51 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637927a71d5dd0.89147271@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 13:00:48 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 13:00:48 --> 220 smtp.googlemail.com ESMTP v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+
+to: 555 5.5.2 Syntax error. v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+
+quit: 221 2.0.0 closing connection v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+
+CRITICAL - 2022-11-19 13:00:48 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:00:46 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637927de012f58.99415814@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:00:46 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637927de012f58.99415814@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection v13-20020a056870310d00b0012d939eb0bfsm3812556oaa.34 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:00:46 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637927de012f58.99415814@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 13:02:08 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 13:02:08 --> 220 smtp.googlemail.com ESMTP d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+
+to: 555 5.5.2 Syntax error. d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+
+quit: 221 2.0.0 closing connection d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+
+CRITICAL - 2022-11-19 13:02:08 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:02:06 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379282e69b996.25484201@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:02:06 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379282e69b996.25484201@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection d18-20020a056830139200b0066dd63044bbsm1719971otq.13 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:02:06 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6379282e69b996.25484201@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 13:03:52 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 13:03:52 --> 220 smtp.googlemail.com ESMTP p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+
+to: 555 5.5.2 Syntax error. p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+
+quit: 221 2.0.0 closing connection p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+
+CRITICAL - 2022-11-19 13:03:52 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:03:49 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;63792895e98636.58411316@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:03:49 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;63792895e98636.58411316@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection p128-20020aca5b86000000b0035a5b95bd38sm2656842oib.54 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:03:49 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;63792895e98636.58411316@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 13:04:39 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 13:04:39 --> 220 smtp.googlemail.com ESMTP h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+
+to: 555 5.5.2 Syntax error. h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+
+quit: 221 2.0.0 closing connection h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+
+CRITICAL - 2022-11-19 13:04:39 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:04:37 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637928c51eb130.43835127@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:04:37 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637928c51eb130.43835127@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection h23-20020a9d6017000000b006391adb6034sm2984913otj.72 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:04:37 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637928c51eb130.43835127@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 13:09:50 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 13:09:50 --> 220 smtp.googlemail.com ESMTP g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+
+to: 555 5.5.2 Syntax error. g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+
+quit: 221 2.0.0 closing connection g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+
+CRITICAL - 2022-11-19 13:09:50 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:09:48 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637929fc715e07.98245435@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:09:48 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637929fc715e07.98245435@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection g3-20020a9d6203000000b0066c3ca7b12csm2967427otj.61 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:09:48 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;637929fc715e07.98245435@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:16:03 --> syntax error, unexpected identifier "src", expecting ")"
+in APPPATH\Controllers\Home.php on line 194.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/agregar_usuario')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/agregar_usuario')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/agregar_usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:16:07 --> syntax error, unexpected identifier "src", expecting ")"
+in APPPATH\Controllers\Home.php on line 194.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/agregar_usuario')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/agregar_usuario')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/agregar_usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:23:14 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\Home.php on line 195.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/agregar_usuario')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/agregar_usuario')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/agregar_usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-19 13:33:41 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-19 13:33:41 --> 220 smtp.googlemail.com ESMTP fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+
+to: 555 5.5.2 Syntax error. fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+
+quit: 221 2.0.0 closing connection fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+
+CRITICAL - 2022-11-19 13:33:41 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:33:39 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;63792f9378d925.22256748@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:33:39 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;63792f9378d925.22256748@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(212): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.41.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+</pre><pre>to: 555 5.5.2 Syntax error. fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+</pre>The following SMTP error was encountered: 555 5.5.2 Syntax error. fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection fo16-20020a0568709a1000b0011f00b027bdsm3821368oab.45 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 19 Nov 2022 13:33:39 -0600
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;63792f9378d925.22256748@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:55:09 --> Undefined variable $ListaUsuario
+in APPPATH\Views\usuarios\mostrarControl.php on line 139.
+ 1 APPPATH\Views\usuarios\mostrarControl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ListaUsuario', 'APPPATH\\Views\\usuarios\\mostrarControl.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\mostrarControl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/mostrarControl', [], true)
+ 5 APPPATH\Controllers\Home.php(320): view('usuarios/mostrarControl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:55:19 --> Undefined variable $ListaUsuario
+in APPPATH\Views\usuarios\mostrarControl.php on line 139.
+ 1 APPPATH\Views\usuarios\mostrarControl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ListaUsuario', 'APPPATH\\Views\\usuarios\\mostrarControl.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\mostrarControl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/mostrarControl', [], true)
+ 5 APPPATH\Controllers\Home.php(320): view('usuarios/mostrarControl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:55:39 --> Undefined variable $ListaUsuario
+in APPPATH\Views\usuarios\mostrarControl.php on line 139.
+ 1 APPPATH\Views\usuarios\mostrarControl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ListaUsuario', 'APPPATH\\Views\\usuarios\\mostrarControl.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\mostrarControl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/mostrarControl', [], true)
+ 5 APPPATH\Controllers\Home.php(320): view('usuarios/mostrarControl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:55:46 --> Undefined variable $ListaUsuario
+in APPPATH\Views\usuarios\mostrarControl.php on line 139.
+ 1 APPPATH\Views\usuarios\mostrarControl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ListaUsuario', 'APPPATH\\Views\\usuarios\\mostrarControl.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\mostrarControl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/mostrarControl', [], true)
+ 5 APPPATH\Controllers\Home.php(320): view('usuarios/mostrarControl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:55:52 --> Undefined variable $ListaUsuario
+in APPPATH\Views\usuarios\mostrarControl.php on line 139.
+ 1 APPPATH\Views\usuarios\mostrarControl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ListaUsuario', 'APPPATH\\Views\\usuarios\\mostrarControl.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\mostrarControl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/mostrarControl', [], true)
+ 5 APPPATH\Controllers\Home.php(320): view('usuarios/mostrarControl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:55:57 --> Undefined variable $ListaUsuario
+in APPPATH\Views\usuarios\mostrarControl.php on line 139.
+ 1 APPPATH\Views\usuarios\mostrarControl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ListaUsuario', 'APPPATH\\Views\\usuarios\\mostrarControl.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\mostrarControl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/mostrarControl', [], true)
+ 5 APPPATH\Controllers\Home.php(320): view('usuarios/mostrarControl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 14:07:25 --> Undefined variable $ListaUsuario
+in APPPATH\Views\usuarios\mostrarControl.php on line 139.
+ 1 APPPATH\Views\usuarios\mostrarControl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ListaUsuario', 'APPPATH\\Views\\usuarios\\mostrarControl.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\mostrarControl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/mostrarControl', [], true)
+ 5 APPPATH\Controllers\Home.php(320): view('usuarios/mostrarControl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 14:14:39 --> Undefined variable $ListaUsuario
+in APPPATH\Views\usuarios\mostrarControl.php on line 139.
+ 1 APPPATH\Views\usuarios\mostrarControl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ListaUsuario', 'APPPATH\\Views\\usuarios\\mostrarControl.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\mostrarControl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/mostrarControl', [], true)
+ 5 APPPATH\Controllers\Home.php(320): view('usuarios/mostrarControl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

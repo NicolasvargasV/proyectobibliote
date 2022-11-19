@@ -191,10 +191,10 @@ class Home extends BaseController
      $email->setFrom('n_vargas@alumnos.upla.cl', 'Confirm Registration');
      
      $email->setSubject("hola bienvenido");
-     $email->setMessage("Usted se ha registrado correctamente <br> Bienvenido");
+     $email->setMessage("<br><br> Usted se ha registrado correctamente <br> Bienvenido al aula virtual <br><br><br><br>'Adacemia de aprendizaje online'");
      if ($email->send()) 
      {
-         echo 'Email successfully sent';
+         echo 'La verificacion del correo se ha enviado correctamente <br>';
      } 
      else 
      {
@@ -391,6 +391,51 @@ class Home extends BaseController
        
             //echo "Borrar registro".$id_usuario;
     
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public function enviarGraficoLibro1(){
+            $db = \Config\Database::connect();
+            $userModel= new libroModel($db);
+            $request= \Config\Services::request();
+            /*$id=$request->getPostGet('id');
+            $users=$userModel->find([$id]);
+            $userAux=$userModel->find([$id]);
+            $userAux=array('users'=>$userAux);*/
+    
+    
+            $objetito = new libroModel($db);
+            $objetito2= new autorModel($db);
+            $objetito3= new editorialModel($db);
+            $objetito4= new generoModel($db);
+    
+    
+            $users = $objetito->findAll();
+            $users2= $objetito2->findAll();
+            $users3= $objetito3->findAll();
+            $users4= $objetito4->findAll();
+            //$users = $objetito->query("SELECT * FROM libro");
+            $data['listaLibro']=$users;
+            $data['listaAutor']=$users2;
+            $data['listaEditorial']=$users3;
+            $data['listaGenero']=$users4;
+            //$data['aux']=$userAux;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            //echo view('formularios/formularioAutor',$data);
+            echo view('graficos/graficoLibro1',$data);
+            echo view('paginas/footer');
         }
 
 

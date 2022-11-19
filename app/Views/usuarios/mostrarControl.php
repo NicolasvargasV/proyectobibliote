@@ -18,7 +18,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index">
+        <a class="navbar-brand" href=<?php echo base_url('/index');?> class="btn btn-success">
                 <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -127,51 +127,45 @@ let url=''
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Lenguaje', 'Matematicas', 'fisica', 'Ciencias', 'Quimica', 'Historia'],
-        datasets: 
-            label: '# of Votes',
-            data: [<?php foreach ($ListaUsuario as $item):?>
-          
-            <tr>
-            <td><?php echo $item['id_usuario'];?></td>],
-            </tr>
-        <?php endforeach;?>
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-</script>
-
-</div>
+<canvas id="myChart" width="50" height="50"></canvas>
+            <script>
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Lenguaje', 'Matematica', 'fisica', 'Biologia', 'Quimica', 'Taller'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [5, 8, 2, 3, 6, 1],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+            </script>
+        </div>
 
 
 
@@ -184,7 +178,29 @@ const myChart = new Chart(ctx, {
 
 
 
+<br></b>
+  <br></b> 
+  <!-- CONTENT -->
+  <center> 
+  <section>
+      
+      <h1>Educar es la mejor solucion</h1>
+      <p>esta pagina fue creada con fines educativos by FerN.</p>
 
+  </section>
+  </div>
+
+
+  <!--FOOTER-->
+  <footer>
+      <div class="copyrights">
+      <center>
+          <p>&copy; <?= date('Y') ?> proyecto universitario destinado para el ramo de tecnologia multimedia .</p>
+          </center>
+      </div>
+  </footer>
+
+  </center> 
 
 
 

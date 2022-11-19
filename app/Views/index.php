@@ -65,7 +65,7 @@
                             Accion
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_libro">agregar libro</a></li>
+                            <li><a class="dropdown-item" href="">Grafico libro</a></li>
                             <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_guia">agregar guia</a></li>
                             <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_control">agregar control</a></li>
                             <li><hr class="dropdown-divider"></li>

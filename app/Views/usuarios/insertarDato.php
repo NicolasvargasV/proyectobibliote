@@ -16,7 +16,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index">
+        <a class="navbar-brand" href=<?php echo base_url('/index');?> class="btn btn-success">
                 <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,29 +89,11 @@
 <div class="container-sm">
   <body> 
     <!-- esto es el header -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://media.istockphoto.com/vectors/students-in-audience-young-people-listening-lecture-in-university-vector-id1211520511?k=20&m=1211520511&s=170667a&w=0&h=fhcEssLGr5OudlOVwXrwiT81ulNZf4-tRPJqG7TqjwU=" width="100%" height="50%">
-        </div>
-        <div class="carousel-item">
-          <img src="https://www.redacademica.edu.co/sites/default/files/2021-12/TRABAJO%20AUTONOMO_0.jpg" width="100%" height="50%">
-        </div>
-        <div class="carousel-item">
-          <img src="https://ipla.cl/wp-content/uploads/2021/12/Header-IPLA-CL-SECCIONES-INTERNAS-EPJA.jpg" width="100%" height="50%">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>     
+    
 
   <!-- formulario -->
+  <br></b>
+  <br></b> 
   <br></b>
     <div class ="col border-primary">
       <h3>Registrar un tipo de usuario</h3>
@@ -133,9 +115,81 @@
       </form>
     </div>
 
-  <!-- Despliege formulario -->
+  
  
-  <br></b>
+  
+
+
+
+
+
+
+<head>
+	
+	<link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 minimum-scale=1" />
+	<script type="text/javascript" src="https://www.jqwidgets.com/jquery-widgets-demo/jqwidgets/jqxcore.js"></script>
+	<script type="text/javascript" src="https://www.jqwidgets.com/jquery-widgets-demo/jqwidgets/jqxbarcode.js"></script>
+	<script type="text/javascript" src="https://www.jqwidgets.com/jquery-widgets-demo/jqwidgets/jqxqrcode.js"></script>
+	<script type="text/javascript" src="https://www.jqwidgets.com/jquery-widgets-demo/jqwidgets/jqxbuttons.js"></script>
+	<script type="text/javascript" src="https://www.jqwidgets.com/jquery-widgets-demo/scripts/demos.js"></script>
+	<style>
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			const qrcodes = [...document.querySelectorAll('.qrcode')];
+			for (let i = 0; i < qrcodes.length; i++) {
+				const qrcodeElement = qrcodes[i];
+				const renderAs = qrcodeElement.getAttribute('render-as') || 'svg';
+				const displayLabel = qrcodeElement.hasAttribute('display-label') ? true : false;
+				const value = qrcodeElement.getAttribute('value');
+				const labelPosition = qrcodeElement.getAttribute('label-position') || 'bottom';
+				const errorLevel = qrcodeElement.getAttribute('error-level') || 'L';
+				const embedImage = qrcodeElement.getAttribute('embed-image') || '';
+				// create Barcode component
+				new jqxQRcode(qrcodeElement, {
+					renderAs: renderAs,
+					value: value,
+					errorLevel: errorLevel,
+					labelPosition: labelPosition,
+					embedImage: embedImage,
+					imageWidth: 40,
+					imageHeight: 60,
+					displayLabel: displayLabel
+				});
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="">
+    <br></b>
+    <br></b>
+		<section>
+			<h2>Informacion Importante</h2>
+			<div class="module">
+			</div>
+			<div id="barcode-demo-container" class="module">
+				<div class="card-container">
+					<div class="card-body">
+						
+					</div>
+					<div class="card-footer">
+						<div class="qrcode" value="https://youtu.be/GkaI6MlKVGE" square-width="6"></div>
+					</div>
+				</div>
+			
+				</div>
+			</div>
+		</section>
+	</div>
+	
+</body>
+
+
+
+<br></b>
   <br></b> 
   <!-- CONTENT -->
   <center> 

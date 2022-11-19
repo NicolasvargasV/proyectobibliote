@@ -57,7 +57,8 @@ $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 $routes->get('/hola', 'Home::agregar_usuario',['filter' => 'authGuard']);
 
 
-
+$routes->get('/', 'SendMail::index');
+$routes->match(['get', 'post'], 'SendMail/sendMail', 'SendMail::sendMail');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

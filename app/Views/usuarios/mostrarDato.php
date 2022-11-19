@@ -16,7 +16,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index">
+        <a class="navbar-brand" href=<?php echo base_url('/index');?> class="btn btn-success">
                 <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,27 +89,7 @@
 <div class="container-sm">
   <body> 
     <!-- esto es el header -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://media.istockphoto.com/vectors/students-in-audience-young-people-listening-lecture-in-university-vector-id1211520511?k=20&m=1211520511&s=170667a&w=0&h=fhcEssLGr5OudlOVwXrwiT81ulNZf4-tRPJqG7TqjwU=" width="100%" height="50%">
-        </div>
-        <div class="carousel-item">
-          <img src="https://www.redacademica.edu.co/sites/default/files/2021-12/TRABAJO%20AUTONOMO_0.jpg" width="100%" height="50%">
-        </div>
-        <div class="carousel-item">
-          <img src="https://ipla.cl/wp-content/uploads/2021/12/Header-IPLA-CL-SECCIONES-INTERNAS-EPJA.jpg" width="100%" height="50%">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>     
+   
 
   <!-- Despliege formulario -->
     <table class="table">
