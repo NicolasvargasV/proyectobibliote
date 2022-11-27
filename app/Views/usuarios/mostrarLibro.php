@@ -43,7 +43,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Datos libros
+                            Libreria
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="agregar_libro">Insertar libros</a></li>
@@ -105,6 +105,7 @@
           <th scope="col">Autor</th>
           <th scope="col">genero del libro</th>
           <th scope="col">agregar resumen</th>
+          <th scope="col">imagen</th>
         </tr>
       </thead>
       <tbody>
@@ -118,6 +119,9 @@
           <td><?php echo $item['Autor_lib'];?></td>
           <td><?php echo $item['Genero_lib'];?></td>
           <td><?php echo $item['resumen_lib'];?></td>
+          <td>
+              <img src="<?=base_url()?>/uploads/<?=$item['imagen'];?>" width="100" height="100">
+          </td>
         </tr>
         <?php endforeach;?>
       

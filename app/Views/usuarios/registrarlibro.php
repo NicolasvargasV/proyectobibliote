@@ -43,7 +43,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Datos libros
+                        Libreria
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="agregar_libro">Insertar libros</a></li>
@@ -119,6 +119,16 @@
                 <label for="resumen_lib" class="form-label">agregar resumen</label>
                 <input type="text" class="form-control" name="resumen_lib" id="resumen_lib">
               </div>
+              <!-- Agregar imagen -->
+              <div class="form_group">
+            <label for="imagen">Imagen</label>
+            <input id="imagen" class="form-control-file" type="file" name="imagen">
+            </div>
+
+            <br>
+
+
+
               <button type="submit" class="btn btn-primary">Guardar</button>
             </div>
           </form>

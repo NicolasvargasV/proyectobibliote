@@ -25,6 +25,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
+      
     <a class="navbar-brand" href=<?php echo base_url('/index2');?> class="btn btn-success">
                 <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
     </a>
@@ -75,100 +76,81 @@
     </div>
   </nav>
 </body>
-
+<div class="container-fluid">
+<div align="left">
 <br></b>
-<h3>Socios registrados  </h3>
-<!-- Despliege formulario -->
-<table  id="example" class="ui celled table" style="width:100%">
-      <thead>
-      <tr>
-        <th scope="col">ID </th>
-        <th scope="col">Rut del usuario </th>
-        <th scope="col">fecha de nacimiento</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Apellido paterno</th>
-        <th scope="col">Apellido materno</th>
-        <th scope="col">Email</th>
-
-        
-        <th scope="col">Accion</th><!--QUIERO ELIMINAR  -->
-        
-      </tr>
-      </thead>
-      <tbody>
-
+<h3>  verificacion de correo enviada<br></b> Socio registrado correctamente!!  </h3>
+</div>
 <?php foreach ($ListaUsuario as $item):?>
-          
-          <tr>
+                                  <ul class="list-unstyled mb-1-9">
+                                <tr>
+                                </tr>
+                                <?php endforeach;?>
+
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-4 mb-sm-5">
+                <div class="card card-style1 border-0">
+                    <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="...">
+                            </div>
+                            <div class="col-lg-6 px-xl-10">
+                                <div class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
+                                    <h3 class="h2 text-white mb-0">Señor <td><?php echo $item['nombres'];?></td> </h3>
+                                    
+                                    
+                                </div>
+                                <br></br>
+
+                                
+                                <ul class="list-unstyled mb-1-9">
+                                <h3><li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">id:</span> <td> <?php echo $item['id_usuario'];?></td></h3></li>
+                                <h3> <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">rut usuario:</span> <td><?php echo $item['rut_Usuario'];?></td></h3></li>
+                                <h3> <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">fecha nacimiento:</span> <td><?php echo $item['fechaNac'];?></td></h3></li>
+                                <h3>  <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Apellidos:</span><td><?php echo $item['Apaterno'];?></td>_<td><?php echo $item['Amaterno'];?></td></td></h3></li>
+                                <h3> <li class="display-28"><span class="display-26 text-secondary me-2 font-weight-600">email:</span> <td><?php echo $item['email'];?></td></h3></li>
+                                </ul>
+                                <ul class="social-icon-style1 list-unstyled mb-0 ps-0">
+                                    <li><a href="#!"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#!"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#!"><i class="ti-pinterest"></i></a></li>
+                                    <li><a href="#!"><i class="ti-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 mb-4 mb-sm-5">
+                <div>
+                    <span class="section-title text-primary mb-3 mb-sm-4">Informacion importante</span>
+                    <p>Usted es parte de nuestra compañia, exigimos ser responsable con la informacion que publica ya que de esta manera estaremos ayudando a toda la comunidad estudiantil para que logren tener una mejora considerable del aprendizaje en la enseñanza media.</p>
+                    
+                </div>
+            </div>
+            <DIV align="right">
             
-            <td><?php echo $item['id_usuario'];?></td>
-            <td><?php echo $item['rut_Usuario'];?></td>
-            <td><?php echo $item['fechaNac'];?></td>
-            <td><?php echo $item['nombres'];?></td>
-            <td><?php echo $item['Apaterno'];?></td>
-            <td><?php echo $item['Amaterno'];?></td>
-            <td><?php echo $item['email'];?></td>
+            <a type="button" href="<?php echo base_url('/index.php/Home/agregar_usuario');?>" class="btn btn-danger ">REGRESAR</a>
             
-            <td><a href="<?=base_url('borrarUsuarios/'.$item['id_usuario']);?>"class="btn btn-danger" type="button">Borrar</a></td>
+                         
+</div>
             
-          </tr>
-        <?php endforeach;?>
-    
-    </tbody>
-  </table>
-
-
-
-<script src=https://code.jquery.com/jquery-3.5.1.js ></script>
-<script src=https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js></script>
-<script src=https://cdn.datatables.net/1.12.1/js/dataTables.semanticui.min.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js></script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
 
-    <script>
 
-    $(document).ready(function () {
-        $('#example').DataTable();
-    });
-
-    </script>
-
-
-<script>
-
-    $('#example').DataTable( {
-        responsive: true,
-        autoWidth: false,
-        "language": {
-            "processing": "Procesando...",
-            "lengthMenu": "Mostrar _MENU_ registros",
-            "zeroRecords": "No se encontraron resultados",
-            "emptyTable": "Ningún dato disponible en esta tabla",
-            "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "infoFiltered": "(De _MAX_ total records)",
-            "info": "Mostrando la pagina _PAGE_ de _PAGES_",
-             "search": "Buscar:",
-            "infoThousands": ",",
-            "loadingRecords": "Cargando...",
-            "paginate": {
-            "first": "Primero",
-            "last": "Último",
-            "next": "Siguiente",
-            "previous": "Anterior"}
-        },
-            "aria": {
-                "sortAscending": ": Activar para ordenar la columna de manera ascendente",
-                "sortDescending": ": Activar para ordenar la columna de manera descendente"
-    }
-    } );
 
 </script>
     <br></br>
-    
-
-
     
   <br></b> 
   <!-- CONTENT -->
@@ -193,5 +175,5 @@
 
   </center> 
 
-
+</div>
 </body>

@@ -194,19 +194,13 @@ class Home extends BaseController
      $email->setMessage("<br><br> Usted se ha registrado correctamente <br> Bienvenido al aula virtual <br><br><br><br>'Adacemia de aprendizaje online'");
      if ($email->send()) 
      {
-         echo 'La verificacion del correo se ha enviado correctamente <br>';
+         echo '';
      } 
      else 
      {
          $data = $email->printDebugger(['headers']);
          print_r($data);
      }
-
-
-
-
-
-
 
 
     $MiObjeto->insert($data);
@@ -216,9 +210,7 @@ class Home extends BaseController
 
     }
 
-    public function borrarUsuario(){
-
-    }
+   
 
     public function agregar_libro()
     {
@@ -243,21 +235,30 @@ class Home extends BaseController
     {
         $db = \Config\Database::connect();  
         $MiObjeto = new libros_apoyoModel($db); 
-      
-     $data=array(   
-        'Nombre_lib'=> $this->request->getPost('Nombre_lib'),
-        'Autor_lib'=> $this->request->getPost('Autor_lib'),
-        'Genero_lib'=> $this->request->getPost('Genero_lib'),
-        'resumen_lib'=> $this->request->getPost('resumen_lib'),  
-     );
 
-
+       
+       
+         $data=array(   
+            'Nombre_lib'=> $this->request->getPost('Nombre_lib'),
+            'Autor_lib'=> $this->request->getPost('Autor_lib'),
+            'Genero_lib'=> $this->request->getPost('Genero_lib'),
+            'resumen_lib'=> $this->request->getPost('resumen_lib'),  
+            'imagen'=>      $this->request->getPost('imagen')
+            );
+    
+        
+       
     $MiObjeto->insert($data);
+        
     $users= $MiObjeto->findAll();
+        
     $data['Listalibro'] = $users;
     return view ('usuarios/mostrarLibro', $data);
-
+    
     }
+
+
+
 
     public function agregar_guia()
     {

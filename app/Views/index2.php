@@ -44,11 +44,7 @@
           <li class="nav-item">
             <a class="nav-link" href="/proyectobibliote/Home/agregar_usuario"> Registrarse como socio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disable" href="Home/nuevoUsuario">
-              Socios registrados
-            </a>
-          </li>
+          
         </ul> 
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
