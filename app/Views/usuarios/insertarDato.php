@@ -176,7 +176,7 @@
 						
 					</div>
 					<div class="card-footer">
-						<div class="qrcode" value="https://youtu.be/GkaI6MlKVGE" square-width="6"></div>
+						<div class="qrcode" value="https://youtu.be/rFxhSpdkzJ8" square-width="6"></div>
 					</div>
 				</div>
 			

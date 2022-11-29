@@ -9,7 +9,7 @@ use App\Models\guiasModel;
 use App\Models\Controller;
 use App\Models\controlesModel;
 use App\Models\usuarios;
-
+use CodeIgniter\Files\File;
 
 class Home extends BaseController
 {
@@ -233,21 +233,26 @@ class Home extends BaseController
 
     public function nuevolibro()
     {
+    
         $db = \Config\Database::connect();  
         $MiObjeto = new libros_apoyoModel($db); 
-
-       
-       
-         $data=array(   
-            'Nombre_lib'=> $this->request->getPost('Nombre_lib'),
-            'Autor_lib'=> $this->request->getPost('Autor_lib'),
-            'Genero_lib'=> $this->request->getPost('Genero_lib'),
-            'resumen_lib'=> $this->request->getPost('resumen_lib'),  
-            'imagen'=>      $this->request->getPost('imagen')
-            );
-    
         
        
+        if($imagen=$this->request->getFile('imagen')){
+            
+            $nuevoNombre="text";
+            $newName = $imagen->getRandomName();
+            $imagen->move(WRITEPATH . 'uploads', $newName);
+            $data=array( 
+            'Nombre_lib'    =>  $this->request->getPost('Nombre_lib'),
+            'Autor_lib'     => $this->request->getPost('Autor_lib'),
+            'Genero_lib'    => $this->request->getPost('Genero_lib'),
+            'resumen_lib'   => $this->request->getPost('resumen_lib'),  
+            'imagen'    =>  $nuevoNombre
+                
+            );
+        }
+        
     $MiObjeto->insert($data);
         
     $users= $MiObjeto->findAll();

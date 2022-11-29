@@ -80,6 +80,7 @@
 <div align="left">
 <br></b>
 <h3>  verificacion de correo enviada<br></b> Socio registrado correctamente!!  </h3>
+
 </div>
 <?php foreach ($ListaUsuario as $item):?>
                                   <ul class="list-unstyled mb-1-9">

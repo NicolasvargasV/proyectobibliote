@@ -120,7 +120,7 @@
           <td><?php echo $item['Genero_lib'];?></td>
           <td><?php echo $item['resumen_lib'];?></td>
           <td>
-              <img src="<?=base_url()?>/uploads/<?=$item['imagen'];?>" width="100" height="100">
+              <img src="<?=base_url()?>/writable/uploads/<?php echo $item['imagen'];?>" width="100" height="100" >
           </td>
         </tr>
         <?php endforeach;?>

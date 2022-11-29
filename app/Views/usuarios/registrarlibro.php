@@ -101,7 +101,7 @@
         <br></b>
         <div class ="col border-primary">
             <h1>Registrar libro</h1>
-          <form action="<?php echo base_url('Home/nuevolibro'); ?>" method="post">
+          <form action="<?php echo base_url('Home/nuevolibro'); ?>" method="post" enctype="multipart/form-data">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Nombre del libro </label>
               <input type="text" class="form-control" name="Nombre_lib" id="Nombre_lib" aria-describedby="emailHelp">
