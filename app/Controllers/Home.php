@@ -349,10 +349,6 @@ class Home extends BaseController
 
 
 
-
-
-
-
     public function basedatos()
     {
         $db = \Config\Database::connect();
@@ -365,25 +361,16 @@ class Home extends BaseController
 
 
 
-    public function logout()
-    {
+    public function Logout(){
+        $session = session();
         session_destroy();
-        return redirect()->to('/app/Controllers/Index');
-    }   
-
-
-
-
-
-
-
+        return redirect()->to(base_url().'/index');
+    } 
 
 
 
 //borrar usuario
 
-
-    
     public function borrarUsuarios($id_usuario=null){
     
         $session = session();

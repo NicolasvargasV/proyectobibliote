@@ -1,0 +1,503 @@
+ERROR - 2022-11-30 09:31:52 --> mysqli_sql_exception: Duplicate entry '200000000' for key 'rut' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(206): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-30 09:33:38 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-30 09:33:38 --> 220 smtp.googlemail.com ESMTP bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.13.235]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+
+to: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+
+The following SMTP error was encountered: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+
+quit: 221 2.0.0 closing connection bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+
+CRITICAL - 2022-11-30 09:33:38 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.13.235]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+</pre><pre>to: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+</pre>The following SMTP error was encountered: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 30 Nov 2022 09:33:35 -0600
+To: 4
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;638777cfdeb593.84828245@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.13.235]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+</pre><pre>to: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+</pre>The following SMTP error was encountered: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 30 Nov 2022 09:33:35 -0600
+To: 4
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;638777cfdeb593.84828245@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(206): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.13.235]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+</pre><pre>to: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+</pre>The following SMTP error was encountered: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection bh8-20020a056830380800b006621427ecc7sm1013958otb.60 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 30 Nov 2022 09:33:35 -0600
+To: 4
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;638777cfdeb593.84828245@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-30 09:34:07 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-30 09:34:07 --> 220 smtp.googlemail.com ESMTP 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [186.11.13.235]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+
+to: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+
+The following SMTP error was encountered: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+
+quit: 221 2.0.0 closing connection 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+
+CRITICAL - 2022-11-30 09:34:07 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('220 smtp.googlemail.com ESMTP 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.13.235]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+</pre><pre>to: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+</pre>The following SMTP error was encountered: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 30 Nov 2022 09:34:04 -0600
+To: 4
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;638777ecd4d249.50345514@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('220 smtp.googlemail.com ESMTP 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.13.235]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+</pre><pre>to: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+</pre>The following SMTP error was encountered: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 30 Nov 2022 09:34:04 -0600
+To: 4
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;638777ecd4d249.50345514@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>', true)
+ 3 APPPATH\Controllers\Home.php(206): CodeIgniter\Model->insert('220 smtp.googlemail.com ESMTP 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+<br /><pre>hello: 250-smtp.googlemail.com at your service, [186.11.13.235]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>from: 250 2.1.0 OK 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+</pre><pre>to: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+</pre>The following SMTP error was encountered: 553-5.1.3 The recipient address <4> is not a valid RFC-5321 address. Learn more
+553-5.1.3 at
+553 5.1.3  https://support.google.com/mail/answer/6596 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+<br /><pre>quit: 221 2.0.0 closing connection 187-20020aca06c4000000b0035a7fc53a26sm726295oig.42 - gsmtp
+</pre>Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 30 Nov 2022 09:34:04 -0600
+To: 4
+From: &quot;Confirm Registration&quot; &lt;n_vargas@alumnos.upla.cl&gt;
+Return-Path: &lt;n_vargas@alumnos.upla.cl&gt;
+Subject: =?UTF-8?Q?hola=20bienvenido?=
+Reply-To: &lt;n_vargas@alumnos.upla.cl&gt;
+User-Agent: CodeIgniter
+X-Sender: n_vargas@alumnos.upla.cl
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;638777ecd4d249.50345514@alumnos.upla.cl&gt;
+Mime-Version: 1.0
+
+</pre>')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-30 09:36:04 --> mysqli_sql_exception: Duplicate entry '20804463-' for key 'rut' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(206): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-30 09:36:19 --> mysqli_sql_exception: Duplicate entry '20804463-' for key 'rut' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(206): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-30 09:36:51 --> mysqli_sql_exception: Duplicate entry '1' for key 'rut' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(206): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-30 09:37:31 --> mysqli_sql_exception: Duplicate entry '1' for key 'rut' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(206): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-30 09:38:00 --> mysqli_sql_exception: Duplicate entry '20804463-' for key 'rut' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(206): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-30 09:38:43 --> mysqli_sql_exception: Duplicate entry '555555555' for key 'rut' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(206): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-30 09:40:21 --> mysqli_sql_exception: Duplicate entry '3' for key 'rut' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(206): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-30 11:11:58 --> Class "App\Controllers\tipousuarioModel" not found
+in APPPATH\Controllers\profileController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:13:27 --> Cannot use App\Models\Controller as Controller because the name is already in use
+in APPPATH\Controllers\profileController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-30 11:15:17 --> syntax error, unexpected token "class", expecting "function" or "const"
+in APPPATH\Controllers\profileController.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\profileController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProfileController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProfileController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\ProfileController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:15:59 --> syntax error, unexpected token "class", expecting "function" or "const"
+in APPPATH\Controllers\profileController.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\profileController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProfileController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProfileController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\ProfileController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:16:32 --> syntax error, unexpected token "class", expecting "function" or "const"
+in APPPATH\Controllers\profileController.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\profileController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProfileController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProfileController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\ProfileController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:16:33 --> syntax error, unexpected token "class", expecting "function" or "const"
+in APPPATH\Controllers\profileController.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\profileController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProfileController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProfileController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\ProfileController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-30 11:18:23 --> mysqli_sql_exception: Duplicate entry '1' for key 'rut' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyectobibliote\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(206): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->nuevoUsuario()
+#9 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-30 11:21:10 --> syntax error, unexpected token "class", expecting "function" or "const"
+in APPPATH\Controllers\profileController.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\profileController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProfileController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProfileController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\ProfileController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:21:27 --> syntax error, unexpected token "class", expecting "function" or "const"
+in APPPATH\Controllers\profileController.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\profileController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProfileController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProfileController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\ProfileController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:21:28 --> syntax error, unexpected token "class", expecting "function" or "const"
+in APPPATH\Controllers\profileController.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\profileController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProfileController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProfileController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\ProfileController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:21:41 --> syntax error, unexpected token "{", expecting "function" or "const"
+in APPPATH\Controllers\profileController.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\profileController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProfileController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProfileController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\ProfileController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:49:20 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 370)
+ 2 APPPATH\Controllers\Home.php(370): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:50:14 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 370)
+ 2 APPPATH\Controllers\Home.php(370): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 12:15:44 --> syntax error, unexpected token "<", expecting end of file
+in APPPATH\Views\index2.php on line 66.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('index2', [], true)
+ 3 APPPATH\Controllers\profileController.php(28): view('index2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 12:24:00 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 370)
+ 2 APPPATH\Controllers\Home.php(370): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 12:25:16 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 370.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 370)
+ 2 APPPATH\Controllers\Home.php(370): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
