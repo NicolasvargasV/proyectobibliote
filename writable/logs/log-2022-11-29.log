@@ -254,3 +254,21 @@ in APPPATH\Controllers\Home.php on line 247.
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 21:56:22 --> Invalid file: nueva_pagina/pag_correo.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('nueva_pagina/pag_correo.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('nueva_pagina/pag_correo', [], true)
+ 3 APPPATH\Controllers\correo.php(9): view('nueva_pagina/pag_correo')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\correo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\correo))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 21:57:10 --> Invalid file: nueva/pag_correo.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('nueva/pag_correo.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('nueva/pag_correo', [], true)
+ 3 APPPATH\Controllers\correo.php(9): view('nueva/pag_correo')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\correo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\correo))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
