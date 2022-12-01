@@ -31,7 +31,7 @@ class SigninController extends Controller
                     'isLoggedIn' => TRUE
                 ];
                 $session->set($ses_data);
-                return redirect()->to('/index2');
+                return redirect()->to('/profile');
             
             }else{
                 $session->setFlashdata('msg', 'Contraseña incorrecta.');

@@ -24,7 +24,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
-        <a class="navbar-brand" href=<?php echo base_url('/index');?> class="btn btn-success">
+        <a class="navbar-brand" href=<?php echo base_url('/index2');?> class="btn btn-success">
                 <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

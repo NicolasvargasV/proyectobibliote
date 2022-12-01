@@ -10,52 +10,96 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-white">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index2">
-        <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Cursos
+<div >
+<?php
+                $session = session();
+                $estadoLog= false;
+                if(isset($session)){
+                    if($session->has('isLoggedIn')){
+                    if($session->isLoggedIn){
+                        $estadoLog = true;
+                        $tipo=$session->get('type'); 
+                    }
+                    }
+                }
+            ?>
+        
+                
+
+<nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index2">
+                <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">1° MEDIO</a></li>
-              <li><a class="dropdown-item" href="#">2° MEDIO</a></li>
-              <li><a class="dropdown-item" href="#">3° MEDIO</a></li>
-              <li><a class="dropdown-item" href="#">4° MEDIO</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              PTU
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://queestudiarenchile.com/descarga-3-libros-gratis-para-preparar-la-ptu-prueba-de-transicion/">Material</a></li>
-              <li><a class="dropdown-item" href="https://drive.google.com/file/d/1kheokWKherWaNQ85OkZc48CbBDPmW7-f/view">Guias</a></li>
-              <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=OxgnJ-IgxA0">Ensayos</a></li>       
-            </ul>
-          </li>
-          <li class="nav-item">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Datos usuarios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Home/insertaDato">Insertar datos</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrarDato">Mostrar datos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Libreria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Home/agregar_libro">Insertar libros</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrar_libro">Mostrar libros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guias practicas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Home/agregar_guia">Agregar guias</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar guias</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Controles
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Home/agregar_guia">Agregar control</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar control</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
             <a class="nav-link" href="/proyectobibliote/Home/agregar_usuario"> Registrarse como socio</a>
           </li>
-          
-        </ul> 
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a type="button" href="<?php echo base_url('/index');?>" class="btn btn-success">Cerrar Sesion</a>
-            </li><!-- el href es  Home/Logout-->
-        </ul>
-      </div>
-    </div>
+                </ul>
+
+                
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                    <li>
+                        <a type="button" href="<?php echo base_url('/Home/Logout');?>" class="btn btn-success">Cerrar Sesion</a>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+<br></br>
+<div class="container-sm">
+
+
+
+ 
   </nav>
 </body>
 
@@ -71,6 +115,7 @@
   <!-- Stack the columns on mobile by making one full-width and the other half-width -->
   <div class="row">
     <div class="col-md-8"> <h1>Material de Estudio</h1>
+    <br></b>
 Cuando el material de estudio está trabajado, organizado y bien estructurado se aprende más fácilmente.
 
 Nuestro cerebro funciona mucho mejor si primero trabamos la información y luego la memorizamos.
@@ -80,8 +125,8 @@ Para tener un buen material de estudio hay que empezar por acudir a clase con re
 No es lo mismo trabajar uno con sus apuntes que con los apuntes fotocopiados de algún compañero.
 
 Una vez tomados los apuntes lo primero que hay que hacer es revisarlos, si es posible esa misma tarde: comprobar si están completos y se entienden. En caso contrario habrá que subsanar a la mayor brevedad esas deficiencias. Algunos estudiantes pasan sus apuntes a limpio, labor que requiere mucho tiempo. No obstante, poniendo un poco de cuidado a la hora de tomarlos no será necesario y se podrá utilizar ese tiempo en avanzar en su estudio</div>
-    <div class="col-6 col-md-4"><img src="<?php base_url()?> images/depositphotos_369918594-stock-illustration-education-online-laptop-backpack-books.jpg" class="card-img" alt="..."></div></div>
-  </div>
+    <div class="col-6 col-md-4"><img src="https://static.vecteezy.com/system/resources/previews/001/859/244/non_2x/back-to-school-class-computer-online-books-elementary-education-cartoon-free-vector.jpg" class="card-img" alt="..."></div></div>
+    
 
   <!-- acordeon -->
   <div class="row">
@@ -131,22 +176,13 @@ En cambio, hacer esquemas y pequeños resúmenes en trozos de papel nos obliga a
 
 
     <!-- imagenes -->
-    <div class="col-6 col-md-4"><img src="<?php base_url()?> images/4.png" class="card-img" alt="..."></div>
-
-    
-    
-
+    <div class="col-6 col-md-4"><img src="https://soyib.com/wp-content/uploads/2021/03/el-aprendizaje-del-estudiante-esta-cambiando-el-enfoque-y-aqui-esta-la-razon-por-la-que-es-algo-bueno-tiempos-de-india.jpg" class="card-img" alt="..."></div></div>
     <div class="col-6 col-md-4">
   </div>
-  
-  
   
   </div>
 </div>
 <br></b>
-
-
-
 
 <!-- CONTENT -->
 <center> 
