@@ -300,6 +300,15 @@ class Home extends BaseController
 
     public function nuevolibro()
     {
+
+
+
+
+
+
+
+
+        
     
         $db = \Config\Database::connect();  
         $MiObjeto = new libros_apoyoModel($db); 
@@ -307,21 +316,22 @@ class Home extends BaseController
        
         if($imagen=$this->request->getFile('imagen')){
             
-            $nuevoNombre="text";
+            
             $newName = $imagen->getRandomName();
-            $imagen->move(WRITEPATH . 'uploads', $newName);
+            
+            $path="C:/xampp/htdocs/proyectobibliote/images";
+            $imagen->move($path , $newName);
             $data=array( 
             'Nombre_lib'    =>  $this->request->getPost('Nombre_lib'),
             'Autor_lib'     => $this->request->getPost('Autor_lib'),
             'Genero_lib'    => $this->request->getPost('Genero_lib'),
             'resumen_lib'   => $this->request->getPost('resumen_lib'),  
-            'imagen'    =>  $nuevoNombre
+            'imagen'    =>  $newName
                 
             );
         }
         
-    $MiObjeto->insert($data);
-        
+    $MiObjeto->insert($data);   
     $users= $MiObjeto->findAll();
         
     $data['Listalibro'] = $users;
@@ -505,12 +515,36 @@ class Home extends BaseController
 
 
         public function ver_perfil(){
+         
             $db = \Config\Database::connect();
             $session = session();
-            $id= $session->get('id');
-            $model=new UserModel($db);
+            $MiObjeto = new usuariosModel($db);
+
+
+            if($imagen=$this->request->getFile('imagen')){
+            
+            
+                $newName = $imagen->getRandomName();
+                
+                $path="C:/xampp/htdocs/proyectobibliote/images_user";
+                $imagen->move($path , $newName);
+                $data=array( 
+                'imagen'    =>  $newName 
+                );
+            }
+
+
+
+
+
+
+
+
+
+
+            $users = $MiObjeto->findAll();
            
-            $data['listaUsuario']=$users;
+            $data['ListaUsuario']=$users;
             //print_r($id);
             //print_r($users[0]['id']);
             
