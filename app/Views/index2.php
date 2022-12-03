@@ -73,11 +73,20 @@
                         </ul>
                     </li>
                     
+                    
                     <li class="nav-item">
             <a class="nav-link" href="/proyectobibliote/Home/agregar_usuario"> Registrarse como socio</a>
           </li>
-                </ul>
 
+          <ul class="nav navbar-nav navbar-right">
+          <li>
+          
+                    <a type="button" href="/proyectobibliote/Home/ver_perfil" class="btn btn-warning">Mi perfil</a>
+                        </li>
+                        </ul>
+
+                </ul>
+              
                 
 
                 <form class="d-flex" role="search">
@@ -85,6 +94,7 @@
                 </form>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
+                    
                     <li>
                         <a type="button" href="<?php echo base_url('/Home/Logout');?>" class="btn btn-success">Cerrar Sesion</a>
                         </li>
