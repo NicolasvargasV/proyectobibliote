@@ -86,8 +86,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                     <li>
-                        <a type="button" href="<?php echo base_url('/Home/Logout');?>" class="btn btn-success">Cerrar Sesion</a>
-                        </li>
+                      <a type="button" href="<?php echo base_url('/Home/Logout');?>" class="btn btn-success">Cerrar Sesion</a>
+                    </li>
                     </li>
                 </ul>
             </div>

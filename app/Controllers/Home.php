@@ -13,6 +13,32 @@ use CodeIgniter\Files\File;
 
 class Home extends BaseController
 {
+
+    public function adminUsuarios()
+    {
+        $db = \Config\Database::connect();
+        $MiObjeto = new tipousuarioModel ($db);
+        $data=array(
+        'nombre'=> $this->request->getPost('nombre'),
+        'descripcion'=> $this->request->getPost('descripcion'),
+        'estado'=> $this->request->getPost('estado')
+        );
+    
+        $MiObjeto->insert($data);
+        $users= $MiObjeto->findAll();
+
+        $data['Listatipousuario'] = $users;
+        return view ('admin/usuariosAdmin', $data);
+    }
+    public function adminLibros()
+    {
+        $db = \Config\Database::connect();
+        $MiObjeto= new libros_apoyoModel($db);
+        $users= $MiObjeto->findAll();
+        $data['Listalibro'] = $users;
+
+        return view('admin/librosAdmin', $data);
+    }
     public function index()
     {
         $db = \Config\Database::connect();
