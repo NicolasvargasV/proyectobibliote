@@ -18,6 +18,17 @@
 
 
 <body>
+<?php
+  $session = session();
+  $estadoLog= false;
+  if(isset($session)){
+    if($session->has('isLoggedIn')){
+      if($session->isLoggedIn){
+        $estadoLog = true;
+      }
+    }
+  }
+?>
 <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
         <a class="navbar-brand" href=<?php echo base_url('/index2');?> class="btn btn-success">

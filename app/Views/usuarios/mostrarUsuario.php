@@ -23,6 +23,17 @@
 
 
 <body>
+<?php
+  $session = session();
+  $estadoLog= false;
+  if(isset($session)){
+    if($session->has('isLoggedIn')){
+      if($session->isLoggedIn){
+        $estadoLog = true;
+      }
+    }
+  }
+?>
 <nav class="navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
       
@@ -79,7 +90,7 @@
 <div class="container-fluid">
 <div align="left">
 <br></b>
-<h3>  verificacion de correo enviada<br></b> Socio registrado correctamente!!  </h3>
+
 
 </div>
 <?php foreach ($ListaUsuario as $item):?>
@@ -95,43 +106,34 @@
                 <div class="card card-style1 border-0">
                     <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
                         <div class="row align-items-center">
-                            <div class="col-lg-6 mb-4 mb-lg-0">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="...">
+                        <h3>  verificacion de correo enviada<br></b> Socio registrado correctamente!!  </h3>
+                        
+                            <div >
+                            <br></b>
+                            <center>
+                                <img src="https://cdn.memegenerator.es/imagenes/memes/full/30/71/30716319.jpg" width="50%" height="50%" alt="...">
+</center> 
                             </div>
-                            <div class="col-lg-6 px-xl-10">
-                                <div class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
-                                    <h3 class="h2 text-white mb-0">Señor <td><?php echo $item['nombres'];?></td> </h3>
+                            <div class="col-lg-6 px-xl-5">
+                                <div >
+                                
+                                <h1><li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Señor/a: <td><?php echo $item['nombres'];?></td> </h1>
                                     
                                     
                                 </div>
-                                <br></br>
+                                
 
                                 
-                                <ul class="list-unstyled mb-1-9">
+                                <ul >
                                 <h3><li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">id:</span> <td> <?php echo $item['id_usuario'];?></td></h3></li>
-                                <h3> <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">rut usuario:</span> <td><?php echo $item['rut_Usuario'];?></td></h3></li>
-                                <h3> <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">fecha nacimiento:</span> <td><?php echo $item['fechaNac'];?></td></h3></li>
-                                <h3>  <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Apellidos:</span><td><?php echo $item['Apaterno'];?></td>_<td><?php echo $item['Amaterno'];?></td></td></h3></li>
                                 <h3> <li class="display-28"><span class="display-26 text-secondary me-2 font-weight-600">email:</span> <td><?php echo $item['email'];?></td></h3></li>
-                                </ul>
-                                <ul class="social-icon-style1 list-unstyled mb-0 ps-0">
-                                    <li><a href="#!"><i class="ti-twitter-alt"></i></a></li>
-                                    <li><a href="#!"><i class="ti-facebook"></i></a></li>
-                                    <li><a href="#!"><i class="ti-pinterest"></i></a></li>
-                                    <li><a href="#!"><i class="ti-instagram"></i></a></li>
-                                </ul>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 mb-4 mb-sm-5">
-                <div>
-                    <span class="section-title text-primary mb-3 mb-sm-4">Informacion importante</span>
-                    <p>Usted es parte de nuestra compañia, exigimos ser responsable con la informacion que publica ya que de esta manera estaremos ayudando a toda la comunidad estudiantil para que logren tener una mejora considerable del aprendizaje en la enseñanza media.</p>
-                    
-                </div>
-            </div>
+            
             <DIV align="right">
             
             <a type="button" href="<?php echo base_url('/index.php/Home/agregar_usuario');?>" class="btn btn-danger ">REGRESAR</a>

@@ -22,6 +22,17 @@
 
 
 <body>
+<?php
+  $session = session();
+  $estadoLog= false;
+  if(isset($session)){
+    if($session->has('isLoggedIn')){
+      if($session->isLoggedIn){
+        $estadoLog = true;
+      }
+    }
+  }
+?>
 <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
         <a class="navbar-brand" href=<?php echo base_url('/index2');?> class="btn btn-success">
@@ -119,8 +130,9 @@
           <td><?php echo $item['Autor_lib'];?></td>
           <td><?php echo $item['Genero_lib'];?></td>
           <td><?php echo $item['resumen_lib'];?></td>
+          <?php print_r($item['imagen']);?>
           <td>
-              <img src="<?=base_url()?>/writable/uploads/<?php echo $item['imagen'];?>" width="100" height="100" >
+              <img src="<?=base_url()?>/images/<?php echo $item['imagen'];?>" width="100" height="100" >
           </td>
         </tr>
         <?php endforeach;?>
