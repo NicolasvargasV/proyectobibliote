@@ -14,6 +14,18 @@
 </head>
 
 <body>
+<?php
+                $session = session();
+                $estadoLog= false;
+                if(isset($session)){
+                    if($session->has('isLoggedIn')){
+                    if($session->isLoggedIn){
+                        $estadoLog = true;
+                        $tipo=$session->get('type'); 
+                    }
+                    }
+                }
+            ?>
 <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
         <a class="navbar-brand" href=<?php echo base_url('/index2');?> class="btn btn-success">
@@ -47,38 +59,40 @@
                             Guias practicas
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="agregar_guia">Agregar guias</a></li>
-                            <li><a class="dropdown-item" href="mostrar_guia">Mostrar guias</a></li>
+                            <li><a class="dropdown-item" href="Home/agregar_guia">Agregar guias</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar guias</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Control guias
+                            Controles
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="agregar_control">Agregar control</a></li>
-                            <li><a class="dropdown-item" href="mostrar_control">Mostrar control</a></li>
+                            <li><a class="dropdown-item" href="Home/agregar_guia">Agregar control</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar control</a></li>
                         </ul>
                     </li>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            Accion
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_libro">agregar libro</a></li>
-                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_guia">agregar guia</a></li>
-                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_control">agregar control</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                    
+                    
+                    <li class="nav-item">
+            <a class="nav-link" href="/proyectobibliote/Home/agregar_usuario"> Registrarse como socio</a>
+          </li>
+
+          <ul class="nav navbar-nav navbar-right">
+          <li>
+          
+                    <a type="button" href="/proyectobibliote/Home/ver_perfil" class="btn btn-warning">Mi perfil</a>
+                        </li>
                         </ul>
-                    </div>
+
                 </ul>
 
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a type="button" href="<?php echo base_url("signin");?>" class="btn btn-success">INGRESAR</a>
+                <li>
+                      <a type="button" href="<?php echo base_url('/Home/Logout');?>" class="btn btn-success">Cerrar Sesion</a>
                     </li>
                 </ul>
             </div>

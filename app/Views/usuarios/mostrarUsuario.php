@@ -79,9 +79,9 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         </form>
         <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a type="button" href="<?php echo base_url('/index');?>" class="btn btn-success">Cerrar Sesion</a>
-            </li><!-- el href es  Home/Logout-->
+        <li>
+                      <a type="button" href="<?php echo base_url('/Home/Logout');?>" class="btn btn-success">Cerrar Sesion</a>
+                    </li><!-- el href es  Home/Logout-->
         </ul>
       </div>
     </div>

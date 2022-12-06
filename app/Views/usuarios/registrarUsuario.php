@@ -34,7 +34,7 @@
     }
   }
 ?>
-    <nav class="navbar navbar-expand-lg bg-white">
+<nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
         <a class="navbar-brand" href=<?php echo base_url('/index2');?> class="btn btn-success">
                 <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
@@ -44,49 +44,59 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/insertaDato">
-                            Insertar Datos
-                        </a> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Datos usuarios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="insertaDato">Insertar datos</a></li>
+                            <li><a class="dropdown-item" href="mostrarDato">Mostrar datos</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.sectormatematica.cl/educmedia.htm">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Libreria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="agregar_libro">Insertar libros</a></li>
+                            <li><a class="dropdown-item" href="mostrar_libro">Mostrar libros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Guias practicas
                         </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Home/agregar_guia">Agregar guias</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar guias</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://www.iesboliches.org/tecnologia/index.php/16-videos-tecnicas-estudio">
-                            Tecnicas de estudios
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Controles
                         </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Home/agregar_guia">Agregar control</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar control</a></li>
+                        </ul>
                     </li>
-                    <div class="btn-group">
-                  
-                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     
-                  Accion
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_libro">agregar libro</a></li>
-                    <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_guia">agregar guia</a></li>
-                    <li><a class="dropdown-item" href="#">agregar control</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    
-                  </ul>
-      
-                  
-                  </div>
 
-                  </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <li>
+          
+                    <a type="button" href="/proyectobibliote/Home/ver_perfil" class="btn btn-warning">Mi perfil</a>
+                        </li>
+                        </ul>
 
-
-
+                </ul>
 
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                    <a type="button" href="<?php echo base_url('/index');?>" class="btn btn-success">Cerrar Sesion</a>
+                <li>
+                      <a type="button" href="<?php echo base_url('/Home/Logout');?>" class="btn btn-success">Cerrar Sesion</a>
                     </li>
                 </ul>
             </div>

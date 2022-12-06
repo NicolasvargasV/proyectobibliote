@@ -79,31 +79,25 @@
                             <li><a class="dropdown-item" href="mostrar_control">Mostrar control</a></li>
                         </ul>
                     </li>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            Accion
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_libro">agregar libro</a></li>
-                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_guia">agregar guia</a></li>
-                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_control">agregar control</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                    <a type="button" href="/proyectobibliote/Home/ver_perfil" class="btn btn-warning">Mi perfil</a>
+                        </li>
                         </ul>
-                    </div>
+
                 </ul>
 
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a type="button" href="<?php echo base_url("signin");?>" class="btn btn-success">INGRESAR</a>
+                <li>
+                      <a type="button" href="<?php echo base_url('/Home/Logout');?>" class="btn btn-success">Cerrar Sesion</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </body>
+            
 <body>
   <br></br>
    <div class = "container" >

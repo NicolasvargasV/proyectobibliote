@@ -46,17 +46,15 @@
                         </ul>
                     </li>
           <li class="nav-item">
-            <a class="nav-link" href="Home/mostrar_libro">Libreria</a>
+            <a class="nav-link" href="Home/mostrar_libro2">Libreria</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Home/mostrar_guia">Guias practicas</a>
+            <a class="nav-link" href="Home/mostrar_guia2">Registro guias</a>
           </li>
           
+          
           <li class="nav-item">
-            <a class="nav-link" href="https://queestudiarenchile.com/descarga-3-libros-gratis-para-preparar-la-ptu-prueba-de-transicion/">Material</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://drive.google.com/file/d/1kheokWKherWaNQ85OkZc48CbBDPmW7-f/view">Guias</a>
+            <a class="nav-link" href="https://drive.google.com/file/d/1kheokWKherWaNQ85OkZc48CbBDPmW7-f/view">Material</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://www.youtube.com/watch?v=OxgnJ-IgxA0">Ensayos</a>

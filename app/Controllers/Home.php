@@ -324,6 +324,17 @@ class Home extends BaseController
         return view('usuarios/mostrarLibro', $data);
     }
 
+
+    public function mostrar_libro2()
+    {
+        $db = \Config\Database::connect();
+        $MiObjeto= new libros_apoyoModel($db);
+        $users= $MiObjeto->findAll();
+        $data['Listalibro'] = $users;
+
+        return view('usuarios/mostrarLibro2', $data);
+    }
+
     public function nuevolibro()
     {
 
@@ -385,6 +396,17 @@ class Home extends BaseController
         $data['Listaguia'] = $users;
         
         return view('usuarios/mostrarGuia', $data);
+    }
+
+
+    public function mostrar_guia2()
+    {
+        $db = \Config\Database::connect();
+        $MiObjeto= new guiasModel($db);
+        $users= $MiObjeto->findAll();
+        $data['Listaguia'] = $users;
+        
+        return view('usuarios/mostrarGuia2', $data);
     }
 
     public function nuevaguia()
