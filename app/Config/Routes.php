@@ -53,7 +53,8 @@ $routes->get('/signup', 'SignupController::index');
 $routes->match(['get', 'post'], 'SignupController/store', 'SignupController::store');
 $routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController::loginAuth');
 $routes->get('/signin', 'SigninController::index');
-$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
+$routes->get('/index2', 'index2::index',['filter' => 'authGuard']);
+$routes->get('/Home/mostrarDato', 'Home::MostrarDato',['filter' => 'authGuard']);
 $routes->get('/hola', 'Home::agregar_usuario',['filter' => 'authGuard']);
 
 
