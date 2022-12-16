@@ -75,18 +75,13 @@
                             Controles
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="agregar_guia">Agregar control</a></li>
-                            <li><a class="dropdown-item" href="mostrar_guia">Mostrar control</a></li>
+                            <li><a class="dropdown-item" href="agregar_control">Agregar control</a></li>
+                            <li><a class="dropdown-item" href="mostrar_control">Mostrar control</a></li>
                         </ul>
                     </li>
                     
                     
-                    <li class="nav-item">
-            <a class="nav-link" href="/proyectobibliote/Home/agregar_usuario"> Registrarse como socio</a>
-          </li>
-
-          <ul class="nav navbar-nav navbar-right">
-          <li>
+                    
           
                     <a type="button" href="/proyectobibliote/Home/ver_perfil" class="btn btn-warning">Mi perfil</a>
                         </li>
@@ -132,7 +127,7 @@
           <td><?php echo $item['Autor_lib'];?></td>
           <td><?php echo $item['Genero_lib'];?></td>
           <td><?php echo $item['resumen_lib'];?></td>
-          <?php print_r($item['imagen']);?>
+          
           <td>
               <img src="<?=base_url()?>/images/<?php echo $item['imagen'];?>" width="100" height="100" >
           </td>

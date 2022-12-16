@@ -55,8 +55,18 @@ $routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController:
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/index2', 'index2::index',['filter' => 'authGuard']);
 $routes->get('/Home/mostrarDato', 'Home::MostrarDato',['filter' => 'authGuard']);
-$routes->get('/hola', 'Home::agregar_usuario',['filter' => 'authGuard']);
+$routes->get('/Home/agregar_guia', 'Home::agregar_guia',['filter' => 'authGuard']);
+$routes->get('/Home/mostrar_guia', 'Home::mostrar_guia',['filter' => 'authGuard']);
+$routes->get('/Home/insertaDato', 'Home::insertaDato',['filter' => 'authGuard']);
+$routes->get('/Home/agregar_libro', 'Home::agregar_libro',['filter' => 'authGuard']);
+$routes->get('/Home/mostrar_libro', 'Home::mostrar_libro',['filter' => 'authGuard']);
+$routes->get('/Home/agregar_control', 'Home::agregar_control',['filter' => 'authGuard']);
+$routes->get('/Home/mostrar_control', 'Home::mostrar_control',['filter' => 'authGuard']);
+$routes->get('/Home/agregar_usuario', 'Home::agregar_usuario',['filter' => 'authGuard']);
+$routes->get('/Home/ver_perfil', 'Home::ver_perfil',['filter' => 'authGuard']);
 
+
+$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 
 $routes->get('/', 'SendMail::index');
 $routes->match(['get', 'post'], 'SendMail/sendMail', 'SendMail::sendMail');

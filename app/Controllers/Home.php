@@ -514,25 +514,11 @@ class Home extends BaseController
 
 
 
-
-
-
-
-
-
-
-
-
         public function enviarGraficoLibro1(){
             $db = \Config\Database::connect();
             $userModel= new libroModel($db);
             $request= \Config\Services::request();
-            /*$id=$request->getPostGet('id');
-            $users=$userModel->find([$id]);
-            $userAux=$userModel->find([$id]);
-            $userAux=array('users'=>$userAux);*/
-    
-    
+  
             $objetito = new libroModel($db);
             $objetito2= new autorModel($db);
             $objetito3= new editorialModel($db);
@@ -548,16 +534,12 @@ class Home extends BaseController
             $data['listaAutor']=$users2;
             $data['listaEditorial']=$users3;
             $data['listaGenero']=$users4;
-            //$data['aux']=$userAux;
+           
             echo view('paginas/header');
             echo view('paginas/newnavbar');
-            //echo view('formularios/formularioAutor',$data);
-            echo view('graficos/graficoLibro1',$data);
+            echo view('graficos/grafico',$data);
             echo view('paginas/footer');
         }
-
-
-
 
 
 
@@ -580,12 +562,6 @@ class Home extends BaseController
                 'imagen'    =>  $newName 
                 );
             }
-
-
-
-
-
-
 
 
 

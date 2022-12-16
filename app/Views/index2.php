@@ -68,8 +68,8 @@
                             Controles
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Home/agregar_guia">Agregar control</a></li>
-                            <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar control</a></li>
+                            <li><a class="dropdown-item" href="Home/agregar_control">Agregar control</a></li>
+                            <li><a class="dropdown-item" href="Home/mostrar_control">Mostrar control</a></li>
                         </ul>
                     </li>
                     

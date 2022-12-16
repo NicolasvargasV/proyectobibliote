@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Control guias
+                        Controles 
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="agregar_control">Agregar control</a></li>
@@ -74,15 +74,14 @@
                         </ul>
                     </li>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            Accion
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_libro">agregar libro</a></li>
-                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_guia">agregar guia</a></li>
-                            <li><a class="dropdown-item" href="/proyectobibliote/Home/agregar_control">agregar control</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                    <ul class="nav navbar-nav navbar-right">
+          <li>
+          
+                    <a type="button" href="/proyectobibliote/Home/ver_perfil" class="btn btn-warning">Mi perfil</a>
+                        </li>
                         </ul>
+
+                </ul>
                     </div>
                 </ul>
 

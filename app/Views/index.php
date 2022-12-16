@@ -29,10 +29,10 @@
                         Cursos
                         </a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">1° MEDIO</a></li>
-                        <li><a class="dropdown-item" href="#">2° MEDIO</a></li>
-                        <li><a class="dropdown-item" href="#">3° MEDIO</a></li>
-                        <li><a class="dropdown-item" href="#">4° MEDIO</a></li>
+                        <li><a class="dropdown-item" href="https://www.curriculumnacional.cl/estudiantes/Nivel/Educacion-General/1-Medio/">1° MEDIO</a></li>
+                        <li><a class="dropdown-item" href="https://www.curriculumnacional.cl/estudiantes/Nivel/Educacion-General/2-Medio/">2° MEDIO</a></li>
+                        <li><a class="dropdown-item" href="https://www.curriculumnacional.cl/estudiantes/Nivel/Educacion-General/3-Medio/">3° MEDIO</a></li>
+                        <li><a class="dropdown-item" href="https://www.curriculumnacional.cl/estudiantes/Nivel/Educacion-General/4-Medio/">4° MEDIO</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">

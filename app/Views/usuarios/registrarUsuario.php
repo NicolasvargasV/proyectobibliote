@@ -67,8 +67,8 @@
                             Guias practicas
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Home/agregar_guia">Agregar guias</a></li>
-                            <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar guias</a></li>
+                            <li><a class="dropdown-item" href=<?php echo base_url('Home/agregar_guia');?> >Agregar guias</a></li>
+                            <li><a class="dropdown-item" href=<?php echo base_url('Home/mostrar_guia');?> >Mostrar guias</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -76,8 +76,8 @@
                             Controles
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Home/agregar_guia">Agregar control</a></li>
-                            <li><a class="dropdown-item" href="Home/mostrar_guia">Mostrar control</a></li>
+                            <li><a class="dropdown-item"  href=<?php echo base_url('Home/agregar_control');?> >Agregar control</a></li>
+                            <li><a class="dropdown-item"  href=<?php echo base_url('Home/mostrar_control');?> >Mostrar control</a></li>
                         </ul>
                     </li>
                     
