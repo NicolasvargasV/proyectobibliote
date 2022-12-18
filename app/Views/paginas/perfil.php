@@ -12,20 +12,96 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title></title>
 </head>
-    <body>
-    <?php
-        $session = session();
-        $estadoLog= false;
-        if(isset($session)){
-            if($session->has('isLoggedIn')){
-            if($session->isLoggedIn){
-                $estadoLog = true;
-                }
-            }
-        }
-        ?>
 
+
+<body>
+<?php
+  $session = session();
+  $estadoLog= false;
+  if(isset($session)){
+    if($session->has('isLoggedIn')){
+      if($session->isLoggedIn){
+        $estadoLog = true;
+      }
+    }
+  }
+?>
+<nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+        <a class="navbar-brand" href=<?php echo base_url('/index2');?> class="btn btn-success">
+                <img src="https://aulaestudio.com/wp-content/uploads/cropped-Logo-una-tinta.png" style="width: 175px; height: 43px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Datos usuarios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="insertaDato">Insertar datos</a></li>
+                            <li><a class="dropdown-item" href="mostrarDato">Mostrar datos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Libreria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="agregar_libro">Insertar libros</a></li>
+                            <li><a class="dropdown-item" href="mostrar_libro">Mostrar libros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guias practicas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="agregar_guia">Agregar guias</a></li>
+                            <li><a class="dropdown-item" href="mostrar_guia">Mostrar guias</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Controles
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="agregar_control">Agregar control</a></li>
+                            <li><a class="dropdown-item" href="mostrar_control">Mostrar control</a></li>
+                        </ul>
+                    </li>
+                    <a type="button" href="/proyectobibliote/Home/ver_perfil" class="btn btn-warning">Mi perfil</a>
+                        </li>
+                        </ul>
+
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                <li>
+                      <a type="button" href="<?php echo base_url('/Home/Logout');?>" class="btn btn-success">Cerrar Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+
+    <body>
+    
 <div class="container">
+
+
+
+
+
+
+
+
         <div class="row">
 
             <div class="col-1">
@@ -46,26 +122,11 @@
                 <div class="container">
                 
             </div>
-            <center>
-            <div class="col-6">
-                <?php $nombre=$session->get('name');?>
-                <div class="row">Cambiar imagen de perfil:  </div>
-                
-                <div class="row"> </div>
-                <form action="<?= base_url()?>/Home/upload_image" enctype="multipart/form-data" method="post">
-                <div class="row"><input class="form-comtrol" type="file" enctype="multipart/form-data" name='images_user'></div>
-                <div class="row"><input type="submit" class="btn btn-primary mt-3 float-end" value="enviar"> </div>
-                
-            </div>
-    </center>
+            <br></br>  
     <br></br>
 </div>
 
-<?php foreach ($ListaUsuario as $item):?>
-                                  <ul class="list-unstyled mb-1-9">
-                                <tr>
-                                </tr>
-                                <?php endforeach;?>
+
 
 <section class="bg-light">
     <div class="container">
@@ -76,8 +137,25 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6 mb-4 mb-lg-0">
                                 <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="...">
+
+        <?php foreach ($Listausers as $item):?>
+
+        <?php endforeach;?>
+       <img src="<?=base_url()?>/images_user/<?php echo $item['imagenes'];?>" width="100" height="100" ></td> 
+
+               <div class="col-6">
+                <div class="row"><a type="button" href="/proyectobibliote/Home/cambiar_imagen"  class="btn btn-primary mt-3 float-end">cambiar imagen de perfil</a></div>
+                
+            </div>
+
+<center>
                             </div>
+
+                           
                             <div class="col-lg-6 px-xl-10">
+                            <?php foreach ($ListaUsuario as $item):?>
+                                  <ul class="list-unstyled mb-1-9">
+                                <?php endforeach;?>
                                 <div class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
                                     <h3 class="h2 text-white mb-0">Señor/a <?php $session = session(); echo $session->get('name');?> </td> </h3>
                                     
@@ -111,6 +189,8 @@
                     
                 </div>
             </div>
+
+                           
             <DIV align="right">
             
             <a type="button" href="<?php echo base_url('/index2');?>" class="btn btn-danger ">REGRESAR</a>

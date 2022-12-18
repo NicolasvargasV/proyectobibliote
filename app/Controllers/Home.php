@@ -335,17 +335,13 @@ class Home extends BaseController
         return view('usuarios/mostrarLibro2', $data);
     }
 
+
+
+
     public function nuevolibro()
     {
 
 
-
-
-
-
-
-
-        
     
         $db = \Config\Database::connect();  
         $MiObjeto = new libros_apoyoModel($db); 
@@ -549,33 +545,55 @@ class Home extends BaseController
             $db = \Config\Database::connect();
             $session = session();
             $MiObjeto = new usuariosModel($db);
-
-
-            if($imagen=$this->request->getFile('imagen')){
-            
-            
-                $newName = $imagen->getRandomName();
-                
-                $path="C:/xampp/htdocs/proyectobibliote/images_user";
-                $imagen->move($path , $newName);
-                $data=array( 
-                'imagen'    =>  $newName 
-                );
-            }
-
+            $MiObjetito = new UserModel($db);
 
 
 
             $users = $MiObjeto->findAll();
-           
             $data['ListaUsuario']=$users;
-            //print_r($id);
-            //print_r($users[0]['id']);
+            $users = $MiObjetito->findAll();
+            $data['Listausers']=$users;
+            
             
             return view('paginas/perfil',$data);
             
         
         }
+
+
+
+
+        public function cambiar_imagen(){
+         
+            $db = \Config\Database::connect();
+            $session = session();
+            $MiObjeto = new UserModel($db);
+
+
+            if($imagenes=$this->request->getFile('imagenes')){
+            
+            
+                $newName = $imagenes->getRandomName();
+                
+                $path="C:/xampp/htdocs/proyectobibliote/images_user";
+                $imagenes->move($path , $newName);
+                $data=array( 
+                'imagenes'    =>  $newName 
+                );
+
+            }
+
+            $users = $MiObjeto->findAll();
+            $data['Listausers']=$users;
+            return view('usuarios/fotoperfil',$data);
+            
+        
+        }
+
+
+
+
+
 
 
 

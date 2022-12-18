@@ -9,6 +9,7 @@ class UserModel extends Model{
         'name',
         'email',
         'password',
+        'imagenes',
         'created_at'
     ];
 }   
