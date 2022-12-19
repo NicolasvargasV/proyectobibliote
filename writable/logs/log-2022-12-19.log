@@ -1,0 +1,685 @@
+CRITICAL - 2022-12-19 13:33:33 --> Invalid file: usuarios/perfil.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/perfil.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/perfil', [], true)
+ 3 APPPATH\Controllers\Home.php(588): view('usuarios/perfil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 13:40:58 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(579): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\images_user', '1671478858_30ef59440741fc753555')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 13:45:26 --> syntax error, unexpected variable "$this", expecting ")"
+in APPPATH\Controllers\Home.php on line 582.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/cambiar_imagen')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/cambiar_imagen')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/cambiar_imagen')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 13:45:59 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(579): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\images_user', '1671479159_070d38323bd076eebd41')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 13:57:27 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(579): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\images_user', '1671479847_fd8cdcae546f84f2e9c2')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 14:12:43 --> Undefined variable $item
+in APPPATH\Views\usuarios\fotoperfil.php on line 142.
+ 1 APPPATH\Views\usuarios\fotoperfil.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\usuarios\\fotoperfil.php', 142)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\fotoperfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/fotoperfil', [], true)
+ 5 APPPATH\Controllers\Home.php(589): view('usuarios/fotoperfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 14:13:09 --> Undefined variable $item
+in APPPATH\Views\usuarios\fotoperfil.php on line 142.
+ 1 APPPATH\Views\usuarios\fotoperfil.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\usuarios\\fotoperfil.php', 142)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\fotoperfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/fotoperfil', [], true)
+ 5 APPPATH\Controllers\Home.php(589): view('usuarios/fotoperfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 14:17:00 --> Undefined variable $item
+in APPPATH\Views\usuarios\fotoperfil.php on line 142.
+ 1 APPPATH\Views\usuarios\fotoperfil.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\usuarios\\fotoperfil.php', 142)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\fotoperfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/fotoperfil', [], true)
+ 5 APPPATH\Controllers\Home.php(589): view('usuarios/fotoperfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 14:18:19 --> Undefined variable $item
+in APPPATH\Views\usuarios\fotoperfil.php on line 142.
+ 1 APPPATH\Views\usuarios\fotoperfil.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\usuarios\\fotoperfil.php', 142)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\fotoperfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/fotoperfil', [], true)
+ 5 APPPATH\Controllers\Home.php(589): view('usuarios/fotoperfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 14:18:30 --> Undefined variable $item
+in APPPATH\Views\usuarios\fotoperfil.php on line 142.
+ 1 APPPATH\Views\usuarios\fotoperfil.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\usuarios\\fotoperfil.php', 142)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\fotoperfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/fotoperfil', [], true)
+ 5 APPPATH\Controllers\Home.php(589): view('usuarios/fotoperfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 14:18:31 --> Undefined array key "imagenes"
+in APPPATH\Views\paginas\perfil.php on line 144.
+ 1 APPPATH\Views\paginas\perfil.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagenes"', 'APPPATH\\Views\\paginas\\perfil.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil', [], true)
+ 5 APPPATH\Controllers\Home.php(559): view('paginas/perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 14:18:33 --> Undefined variable $item
+in APPPATH\Views\usuarios\fotoperfil.php on line 142.
+ 1 APPPATH\Views\usuarios\fotoperfil.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\usuarios\\fotoperfil.php', 142)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\fotoperfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/fotoperfil', [], true)
+ 5 APPPATH\Controllers\Home.php(589): view('usuarios/fotoperfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 14:18:34 --> Undefined array key "imagenes"
+in APPPATH\Views\paginas\perfil.php on line 144.
+ 1 APPPATH\Views\paginas\perfil.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagenes"', 'APPPATH\\Views\\paginas\\perfil.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil', [], true)
+ 5 APPPATH\Controllers\Home.php(559): view('paginas/perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 14:18:37 --> Undefined variable $item
+in APPPATH\Views\usuarios\fotoperfil.php on line 142.
+ 1 APPPATH\Views\usuarios\fotoperfil.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\usuarios\\fotoperfil.php', 142)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\fotoperfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios/fotoperfil', [], true)
+ 5 APPPATH\Controllers\Home.php(589): view('usuarios/fotoperfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 14:18:37 --> Undefined array key "imagenes"
+in APPPATH\Views\paginas\perfil.php on line 144.
+ 1 APPPATH\Views\paginas\perfil.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagenes"', 'APPPATH\\Views\\paginas\\perfil.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil', [], true)
+ 5 APPPATH\Controllers\Home.php(559): view('paginas/perfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 14:56:21 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(579): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\images_user', '1671483381_951644689057eceb5f32')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:33:31 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 586.
+ 1 APPPATH\Controllers\Home.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 586)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:33:35 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 586.
+ 1 APPPATH\Controllers\Home.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 586)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:33:43 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 586.
+ 1 APPPATH\Controllers\Home.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 586)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:34:08 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 586.
+ 1 APPPATH\Controllers\Home.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 586)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:34:16 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 586.
+ 1 APPPATH\Controllers\Home.php(586): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 586)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:36:05 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 590.
+ 1 APPPATH\Controllers\Home.php(590): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 590)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:36:28 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 590.
+ 1 APPPATH\Controllers\Home.php(590): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 590)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:38:13 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 590.
+ 1 APPPATH\Controllers\Home.php(590): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 590)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:39:01 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 590.
+ 1 APPPATH\Controllers\Home.php(590): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 590)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:39:23 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 590.
+ 1 APPPATH\Controllers\Home.php(590): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 590)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:39:30 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 590.
+ 1 APPPATH\Controllers\Home.php(590): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 590)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:39:38 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 590.
+ 1 APPPATH\Controllers\Home.php(590): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 590)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:41:44 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 587.
+ 1 APPPATH\Controllers\Home.php(587): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 587)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:42:03 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(0, 'insert')
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert(0, true)
+ 4 APPPATH\Controllers\Home.php(587): CodeIgniter\Model->insert(0)
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:42:40 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 587.
+ 1 APPPATH\Controllers\Home.php(587): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 587)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:45:39 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 587.
+ 1 APPPATH\Controllers\Home.php(587): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 587)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:45:43 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 587.
+ 1 APPPATH\Controllers\Home.php(587): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 587)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:46:04 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 587.
+ 1 APPPATH\Controllers\Home.php(587): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 587)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:48:34 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:53:09 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:53:27 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:57:50 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:58:50 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:59:35 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:01:17 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(579): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\images_user', '1671487277_63852531059464ec03fc')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:02:58 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:03:08 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(579): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\images_user', '1671487388_cc9fbe93e197ea094e7e')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:03:13 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:03:16 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:03:23 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:06:03 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:06:12 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:10:30 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:17:22 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:17:48 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(579): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\images_user', '1671488268_dada1e885cc39aa7e851')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:24:27 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(579): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\images_user', '1671488667_fd6c3c250247349641d6')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:24:29 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:26:37 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:31:21 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:32:53 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:32:55 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:34:19 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:34:32 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:34:46 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:35:22 --> Undefined variable $datas
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datas', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:38:25 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:38:40 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:39:04 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:41:06 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:43:01 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:43:57 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 16:46:08 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 588.
+ 1 APPPATH\Controllers\Home.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 588)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->cambiar_imagen()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-19 17:17:02 --> mysqli_sql_exception: Unknown column 'asignatura_control=' in 'group statement' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`g...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`g...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`g...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`g...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(449): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+#7 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-19 17:17:02 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\Home.php on line 449.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-19 17:17:27 --> mysqli_sql_exception: Unknown column 'asignatura_control=' in 'group statement' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`g...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`g...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`g...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`g...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(449): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+#7 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-12-19 17:17:30 --> mysqli_sql_exception: Unknown column 'asignatura_control=' in 'group statement' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`g...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`g...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`g...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`g...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(449): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+#7 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-12-19 17:17:44 --> mysqli_sql_exception: Unknown column 'asignatura_control=' in 'group statement' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`g...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`g...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`g...')
+#3 C:\xampp\htdocs\proyectobibliote\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`g...', Array, false)
+#4 C:\xampp\htdocs\proyectobibliote\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(450): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+#7 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-19 17:18:04 --> Call to undefined method App\Models\controlesModel::getarray
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Model->__call('getarray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 17:18:14 --> Call to undefined method App\Models\controlesModel::getArray
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Model->__call('getArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 17:19:08 --> Call to undefined method App\Models\controlesModel::getResultArray
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Model->__call('getResultArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 17:19:09 --> Call to undefined method App\Models\controlesModel::getResultArray
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Model->__call('getResultArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 17:20:05 --> Call to undefined method App\Models\controlesModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 17:20:06 --> Call to undefined method App\Models\controlesModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 17:20:07 --> Call to undefined method App\Models\controlesModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 17:23:15 --> Call to undefined method App\Models\controlesModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 17:23:15 --> Call to undefined method App\Models\controlesModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(450): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-19 17:26:16 --> mysqli_sql_exception: Unknown column 'matematica' in 'where clause' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(gr...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(gr...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(gr...')
+#3 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(443): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(gr...')
+#4 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+#5 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-19 17:26:16 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\Home.php on line 444.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-19 17:27:35 --> mysqli_sql_exception: Unknown column 'matematica' in 'where clause' in C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\proyectobibliote\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(gr...', 0)
+#1 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(gr...')
+#2 C:\xampp\htdocs\proyectobibliote\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(gr...')
+#3 C:\xampp\htdocs\proyectobibliote\app\Controllers\Home.php(443): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(gr...')
+#4 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+#5 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\proyectobibliote\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\proyectobibliote\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-19 17:27:35 --> Call to a member function get() on bool
+in APPPATH\Controllers\Home.php on line 444.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->mostrar_control()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

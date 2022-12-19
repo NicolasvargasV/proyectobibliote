@@ -136,15 +136,15 @@
                     <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
                         <div class="row align-items-center">
                             <div class="col-lg-6 mb-4 mb-lg-0">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="...">
+                                
 
         <?php foreach ($Listausers as $item):?>
 
         <?php endforeach;?>
-       <img src="<?=base_url()?>/images_user/<?php echo $item['imagenes'];?>" width="100" height="100" ></td> 
+        <img src="<?=base_url()?>/images_user/<?php echo $item['imagenes'];?>" width="300px" height="300" style="border:solid;border-radius:20px" ></td>
 
                <div class="col-6">
-                <div class="row"><a type="button" href="/proyectobibliote/Home/cambiar_imagen"  class="btn btn-primary mt-3 float-end">cambiar imagen de perfil</a></div>
+                <div class="row"><a type="button" href="/proyectobibliote/Home/cambiar_ig"  class="btn btn-primary mt-3 float-end">cambiar imagen de perfil</a></div>
                 
             </div>
 

@@ -64,6 +64,7 @@ $routes->get('/Home/agregar_control', 'Home::agregar_control',['filter' => 'auth
 $routes->get('/Home/mostrar_control', 'Home::mostrar_control',['filter' => 'authGuard']);
 $routes->get('/Home/agregar_usuario', 'Home::agregar_usuario',['filter' => 'authGuard']);
 $routes->get('/Home/ver_perfil', 'Home::ver_perfil',['filter' => 'authGuard']);
+$routes->get('/Home/cambiar_imagen', 'Home::cambiar_imagen',['filter' => 'authGuard']);
 
 
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);

@@ -441,7 +441,16 @@ class Home extends BaseController
     {
         $db = \Config\Database::connect();
         $MiObjeto= new controlesModel($db);
-        $users= $MiObjeto->findAll();
+        
+        $users= $MiObjeto->selectCount ('grado_control');
+        $users= $MiObjeto->where('asignatura_control=','matematica');
+        $users= $MiObjeto->where('asignatura_control=','lenguaje');
+        $users= $MiObjeto->where('asignatura_control=','ciencias');
+        $users= $MiObjeto->groupBy('asignatura_control');
+        $users= $MiObjeto->get()->getResultArray();
+        
+
+        
         $data['Listacontrol'] = $users;
 
         return view('usuarios/mostrarControl', $data);
@@ -566,9 +575,9 @@ class Home extends BaseController
         public function cambiar_imagen(){
          
             $db = \Config\Database::connect();
-            $session = session();
             $MiObjeto = new UserModel($db);
-
+            $session = session();
+            $name= $session->get('name');
 
             if($imagenes=$this->request->getFile('imagenes')){
             
@@ -578,17 +587,110 @@ class Home extends BaseController
                 $path="C:/xampp/htdocs/proyectobibliote/images_user";
                 $imagenes->move($path , $newName);
                 $data=array( 
+
                 'imagenes'    =>  $newName 
                 );
 
             }
 
-            $users = $MiObjeto->findAll();
-            $data['Listausers']=$users;
-            return view('usuarios/fotoperfil',$data);
+            
+            $MiObjeto->insert($data); 
+            $users= $MiObjeto->findAll();  
+            $data['Listausers'] = $users;
+            return view ('usuarios/fotoperfil', $data);
             
         
         }
+
+
+
+
+
+        public function cambiar_ig(){
+         
+            $db = \Config\Database::connect();
+            $MiObjeto = new UserModel($db);
+            
+            
+            $users= $MiObjeto->findAll();  
+            $data['Listausers'] = $users;
+            return view ('usuarios/fotoperfil', $data);
+            
+        
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public function upload_image(){
+    
+            if($imageFile=$this->request->getFile('imagenes')){
+              
+                if($imageFile->isValid() && !$imageFile->hasMoved()){
+                
+                    $validated = $this->validate([
+                        'imagenes'=>[
+                            'uploaded[imagenes]',
+                            'mime_in[imagenes,imagenes/png,imagenes/jpg,imagenes/gif,imagenes/jpeg]'
+                        ]
+                    ]);
+    
+                    if($validated){
+                        //echo "ok";
+                        
+                    }
+                    else{
+                        var_dump($this->validator->listErrors());
+                        return false;
+                    }
+                    //$newName = $imageFile->getRandomName();
+                    $session = session();
+                    $name= $session->get('name');
+                    $newName = $imageFile->getName().".jpg";
+                    $db = \Config\Database::connect();
+                    $model= new UserModel($db);
+                    $data =[
+                
+                        "imagenes" => $newName,
+                        
+                        
+                    ];
+                    $path=$path="C:/xampp/htdocs/proyectobibliote/images_user";
+                    //echo WRITEPATH;
+                    $imageFile->move($path,$newName);
+                    $db = \Config\Database::connect();
+                    $session = session();
+                    $id= $session->get('id');
+                    $res=$model->update($id,$data);
+                    $model=new UserModel($db);
+                    $users =$model->dataLibro($id);
+                    $data['Listausers']=$users;
+                    return view('usuarios/fotoperfil',$data);
+                }
+    
+            }
+        }
+
+
+
 
 
 
